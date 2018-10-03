@@ -6,6 +6,7 @@
       <class name="example.NewTest">
         <methods>
           <include name="testEasy"/>
+          <include name="testvalidate"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
