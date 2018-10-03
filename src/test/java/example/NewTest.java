@@ -16,7 +16,7 @@ public class NewTest {
 			String title = driver.getTitle();	
 			System.out.println(title);
 			try {
-				Thread.sleep(100000);
+				Thread.sleep(10000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
