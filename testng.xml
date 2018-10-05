@@ -6,4 +6,10 @@
       <class name="example.NewTest"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="example.TestngAnnotation"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

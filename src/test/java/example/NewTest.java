@@ -24,7 +24,7 @@ public class NewTest {
 			Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
 		}	
 		
-		@Test(priority=2)				
+	//	@Test(priority=2)				
 		public void testvalidate() {	
 				driver.findElement(By.xpath("//*[@id='navbar-brand-centered']/ul/li[1]/a")).click();
 		}	
