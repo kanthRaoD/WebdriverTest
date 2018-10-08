@@ -6,7 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;		
 import org.testng.Assert;		
 import org.testng.annotations.Test;	
-import org.testng.annotations.BeforeTest;	
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;		
 public class NewTest {		
 	    private WebDriver driver;		
@@ -21,12 +22,14 @@ public class NewTest {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
+			//Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
 		}	
 		
-	//	@Test(priority=2)				
-		public void testvalidate() {	
-				driver.findElement(By.xpath("//*[@id='navbar-brand-centered']/ul/li[1]/a")).click();
+		@Test(priority=2)
+		@Parameters("myName")
+		public void testvalidate(String myName) {	
+			 System.out.println("Parameterized value is : " + myName);
+				//driver.findElement(By.xpath("//*[@id='navbar-brand-centered']/ul/li[1]/a")).click();
 		}	
 		@BeforeTest
 		public void beforeTest() {	
