@@ -13,9 +13,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;		
 public class NewTest {		
 	    private WebDriver driver;		
-		@Test(priority=1)	
-		
-		public void testEasy() {	
+		@Test(groups ={"login","navigatebackword","onlinebanking","transferfunds"})	
+		public void invokebrowser() {	
 			driver.get("http://zero.webappsecurity.com/");  
 			String title = driver.getTitle();	
 			System.out.println(title);
@@ -31,7 +30,7 @@ public class NewTest {
 		
 	
 		
-		@Test(priority=2)
+		@Test(groups = { "login"})	
 		public void login()
 		{
 			
@@ -44,20 +43,20 @@ public class NewTest {
 			driver.findElement(By.xpath("//*[@id='login_form']/div[2]/input")).click();
 		}
 		
-		@Test(priority=3)
+		@Test(groups = { "navigatebackword"})	
 		public void navigatebackword()
 		{
 		driver.navigate().back();
 		}
 		
-		@Test(priority=4)
+		@Test(groups = { "onlinebanking"})
 		public void onlinebanking()
 		{
 			driver.findElement(By.xpath("//*[@id='onlineBankingMenu']/div/strong")).click();
 		}
 		
 		
-		@Test(priority=5)
+		@Test(groups = { "transferfunds"})
 		public void transferfunds()
 		{
 			driver.findElement(By.xpath("//*[@id='transfer_funds_link']")).click();

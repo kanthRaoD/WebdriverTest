@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -111,12 +111,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="example.NewTest" hash-for-method="onlinebanking">onlinebanking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="example.TestngAnnotation" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="example.NewTest" hash-for-method="testEasy">testEasy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="example.NewTest" hash-for-method="transferfunds">transferfunds</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -168,9 +178,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="onlinebanking">
+                  </a> <!-- onlinebanking -->
+                  <span class="method-name">onlinebanking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testEasy">
                   </a> <!-- testEasy -->
                   <span class="method-name">testEasy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="transferfunds">
+                  </a> <!-- transferfunds -->
+                  <span class="method-name">transferfunds</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,28 +251,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testEasy')
 data.setCell(0, 2, 'example.NewTest')
-data.setCell(0, 3, 15982);
+data.setCell(0, 3, 15664);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'transferfunds')
 data.setCell(1, 2, 'example.NewTest')
-data.setCell(1, 3, 3289);
+data.setCell(1, 3, 2441);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'navigatebackword')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'example.NewTest')
-data.setCell(2, 3, 746);
+data.setCell(2, 3, 2333);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCase1')
-data.setCell(3, 2, 'example.TestngAnnotation')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'onlinebanking')
+data.setCell(3, 2, 'example.NewTest')
+data.setCell(3, 3, 1130);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'navigatebackword')
+data.setCell(4, 2, 'example.NewTest')
+data.setCell(4, 3, 657);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCase1')
+data.setCell(5, 2, 'example.TestngAnnotation')
+data.setCell(5, 3, 1);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -291,64 +323,72 @@ return data;
               <div class="chronological-class-name">example.NewTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">example.TestngAnnotation</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">3814 ms</span>
+                <span class="method-start">3839 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">3818 ms</span>
+                <span class="method-start">3843 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">3820 ms</span>
+                <span class="method-start">3846 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1</span>
-                <span class="method-start">3820 ms</span>
+                <span class="method-start">3846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">3821 ms</span>
+                <span class="method-start">3847 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">3821 ms</span>
+                <span class="method-start">3848 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">example.NewTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testEasy</span>
-                <span class="method-start">3822 ms</span>
+                <span class="method-start">3848 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">19807 ms</span>
+                <span class="method-start">19512 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigatebackword</span>
-                <span class="method-start">23096 ms</span>
+                <span class="method-start">21845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">onlinebanking</span>
+                <span class="method-start">22502 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">transferfunds</span>
+                <span class="method-start">23632 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">23844 ms</span>
+                <span class="method-start">26075 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">example.TestngAnnotation</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">25089 ms</span>
+                <span class="method-start">27341 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">25130 ms</span>
+                <span class="method-start">27401 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
