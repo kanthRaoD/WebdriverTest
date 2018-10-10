@@ -42,6 +42,11 @@ public class NewTest {
 			driver.findElement(By.xpath("//*[@id='login_form']/div[2]/input")).click();
 		}
 		
+		@Test(priority=3)
+		public void navigatebackword()
+		{
+		driver.navigate().back();
+		}
 		
 		
 		

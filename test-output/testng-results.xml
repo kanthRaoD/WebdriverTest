@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29530" started-at="2018-10-10T06:57:39Z" finished-at="2018-10-10T06:58:08Z">
+  <suite name="Suite" duration-ms="20358" started-at="2018-10-10T07:00:23Z" finished-at="2018-10-10T07:00:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29530" started-at="2018-10-10T06:57:39Z" finished-at="2018-10-10T06:58:08Z">
+    <test name="Test" duration-ms="20358" started-at="2018-10-10T07:00:23Z" finished-at="2018-10-10T07:00:43Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@457e2f02]" name="beforeTest" is-config="true" duration-ms="3334" started-at="2018-10-10T12:27:39Z" finished-at="2018-10-10T12:27:42Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@457e2f02]" name="beforeTest" is-config="true" duration-ms="3541" started-at="2018-10-10T12:30:23Z" finished-at="2018-10-10T12:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@457e2f02]" name="testEasy" duration-ms="18679" started-at="2018-10-10T12:27:42Z" finished-at="2018-10-10T12:28:01Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@457e2f02]" name="testEasy" duration-ms="12629" started-at="2018-10-10T12:30:26Z" finished-at="2018-10-10T12:30:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@457e2f02]" name="login" duration-ms="6258" started-at="2018-10-10T12:28:01Z" finished-at="2018-10-10T12:28:07Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@457e2f02]" name="login" duration-ms="2944" started-at="2018-10-10T12:30:39Z" finished-at="2018-10-10T12:30:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@457e2f02]" name="afterTest" is-config="true" duration-ms="1234" started-at="2018-10-10T12:28:07Z" finished-at="2018-10-10T12:28:08Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@457e2f02]" name="afterTest" is-config="true" duration-ms="1228" started-at="2018-10-10T12:30:42Z" finished-at="2018-10-10T12:30:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

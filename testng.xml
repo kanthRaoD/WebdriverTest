@@ -15,4 +15,5 @@
       <class name="example.TestngAnnotation"/>
     </classes>
   </test>  -->
+  
 </suite> <!-- Suite -->
