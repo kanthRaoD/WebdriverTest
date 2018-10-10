@@ -17,8 +17,9 @@
       </class> <!-- example.TestngAnnotation -->
       <class name="example.NewTest">
         <methods>
-          <include name="testvalidate"/>
+          <include name="testEasy"/>
           <include name="afterTest"/>
+          <include name="login"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- example.NewTest -->

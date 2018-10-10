@@ -11,9 +11,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;		
 public class NewTest {		
 	    private WebDriver driver;		
-		@Test(priority=1)			
-		public void testEasy() {	
-			driver.get("http://demo.guru99.com/test/guru99home/");  
+		@Test(priority=1)	
+		@Parameters("myName")
+		public void testEasy(String myName) {	
+			driver.get("http://zero.webappsecurity.com/");  
 			String title = driver.getTitle();	
 			System.out.println(title);
 			try {
@@ -22,15 +23,35 @@ public class NewTest {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			 System.out.println("Parameterized value is : " + myName);
 			//Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
 		}	
 		
-		@Test(priority=2)
+	//	@Test(priority=2)
 		@Parameters("myName")
 		public void testvalidate(String myName) {	
-			 System.out.println("Parameterized value is : " + myName);
-				//driver.findElement(By.xpath("//*[@id='navbar-brand-centered']/ul/li[1]/a")).click();
+			 
+				driver.findElement(By.xpath("//*[@id='navbar-brand-centered']/ul/li[1]/a")).click();
 		}	
+		
+		
+		@Test(priority=3)
+		public void login()
+		{
+			driver.findElement(By.xpath("//*[@id='signin_button']")).click();
+			
+			driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys("username");;
+			
+			driver.findElement(By.xpath("//*[@id='user_password']")).sendKeys("password");
+			
+			driver.findElement(By.xpath("//*[@id='login_form']/div[2]/input")).click();
+		}
+		
+		
+		
+		
+		
+		
 		@BeforeTest
 		public void beforeTest() {	
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  

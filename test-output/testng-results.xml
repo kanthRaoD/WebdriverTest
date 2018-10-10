@@ -2,71 +2,71 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18714" started-at="2018-10-08T03:48:24Z" finished-at="2018-10-08T03:48:42Z">
+  <suite name="Suite" duration-ms="26754" started-at="2018-10-10T05:52:44Z" finished-at="2018-10-10T05:53:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18617" started-at="2018-10-08T03:48:24Z" finished-at="2018-10-08T03:48:42Z">
+    <test name="Test" duration-ms="26683" started-at="2018-10-10T05:52:44Z" finished-at="2018-10-10T05:53:11Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@39aeed2f]" name="beforeTest" is-config="true" duration-ms="3845" started-at="2018-10-08T09:18:24Z" finished-at="2018-10-08T09:18:28Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@cc285f4]" name="beforeTest" is-config="true" duration-ms="3626" started-at="2018-10-10T11:22:44Z" finished-at="2018-10-10T11:22:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@39aeed2f]" name="testEasy" duration-ms="13347" started-at="2018-10-08T09:18:28Z" finished-at="2018-10-08T09:18:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="testvalidate(java.lang.String)[pri:0, instance:example.NewTest@39aeed2f]" name="testvalidate" duration-ms="12" started-at="2018-10-08T09:18:41Z" finished-at="2018-10-08T09:18:41Z">
+        <test-method status="PASS" signature="testEasy(java.lang.String)[pri:0, instance:example.NewTest@cc285f4]" name="testEasy" duration-ms="18623" started-at="2018-10-10T11:22:48Z" finished-at="2018-10-10T11:23:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[manisha]]>
+                <![CDATA[XXXX]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testvalidate -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@39aeed2f]" name="afterTest" is-config="true" duration-ms="1353" started-at="2018-10-08T09:18:41Z" finished-at="2018-10-08T09:18:42Z">
+        </test-method> <!-- testEasy -->
+        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@cc285f4]" name="login" duration-ms="3088" started-at="2018-10-10T11:23:07Z" finished-at="2018-10-10T11:23:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@cc285f4]" name="afterTest" is-config="true" duration-ms="1321" started-at="2018-10-10T11:23:10Z" finished-at="2018-10-10T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- example.NewTest -->
     </test> <!-- Test -->
-    <test name="Test1" duration-ms="11" started-at="2018-10-08T03:48:42Z" finished-at="2018-10-08T03:48:42Z">
+    <test name="Test1" duration-ms="18" started-at="2018-10-10T05:53:11Z" finished-at="2018-10-10T05:53:11Z">
       <class name="example.TestngAnnotation">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:example.TestngAnnotation@4883b407]" name="beforeSuite" is-config="true" duration-ms="12" started-at="2018-10-08T09:18:24Z" finished-at="2018-10-08T09:18:24Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:example.TestngAnnotation@4883b407]" name="beforeSuite" is-config="true" duration-ms="12" started-at="2018-10-10T11:22:44Z" finished-at="2018-10-10T11:22:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.TestngAnnotation@4883b407]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-10-08T09:18:42Z" finished-at="2018-10-08T09:18:42Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.TestngAnnotation@4883b407]" name="beforeTest" is-config="true" duration-ms="2" started-at="2018-10-10T11:23:11Z" finished-at="2018-10-10T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:example.TestngAnnotation@4883b407]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-10-08T09:18:42Z" finished-at="2018-10-08T09:18:42Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:example.TestngAnnotation@4883b407]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-10-10T11:23:11Z" finished-at="2018-10-10T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:example.TestngAnnotation@4883b407]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-08T09:18:42Z" finished-at="2018-10-08T09:18:42Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:example.TestngAnnotation@4883b407]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-10T11:23:11Z" finished-at="2018-10-10T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:example.TestngAnnotation@4883b407]" name="testCase1" duration-ms="2" started-at="2018-10-08T09:18:42Z" finished-at="2018-10-08T09:18:42Z">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:example.TestngAnnotation@4883b407]" name="testCase1" duration-ms="4" started-at="2018-10-10T11:23:11Z" finished-at="2018-10-10T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:example.TestngAnnotation@4883b407]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-08T09:18:42Z" finished-at="2018-10-08T09:18:42Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:example.TestngAnnotation@4883b407]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-10T11:23:11Z" finished-at="2018-10-10T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:example.TestngAnnotation@4883b407]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-10-08T09:18:42Z" finished-at="2018-10-08T09:18:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.TestngAnnotation@4883b407]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-10-08T09:18:42Z" finished-at="2018-10-08T09:18:42Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.TestngAnnotation@4883b407]" name="afterTest" is-config="true" duration-ms="2" started-at="2018-10-10T11:23:11Z" finished-at="2018-10-10T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:example.TestngAnnotation@4883b407]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-10-08T09:18:42Z" finished-at="2018-10-08T09:18:42Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:example.TestngAnnotation@4883b407]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-10T11:23:11Z" finished-at="2018-10-10T11:23:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:example.TestngAnnotation@4883b407]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-10-10T11:23:11Z" finished-at="2018-10-10T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
