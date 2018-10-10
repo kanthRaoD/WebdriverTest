@@ -24,16 +24,10 @@ public class NewTest {
 				e.printStackTrace();
 			}
 			 
-			//Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
+					
 		}	
 		
-	//	@Test(priority=2)
-		@Parameters("myName")
-		public void testvalidate(String myName) {	
-			 
-				driver.findElement(By.xpath("//*[@id='navbar-brand-centered']/ul/li[1]/a")).click();
-		}	
-		
+	
 		
 		@Test(priority=2)
 		public void login()
