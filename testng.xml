@@ -3,12 +3,21 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   
-   <parameter name = "myName" value="XXXX"/> 
-        <groups>
+
+     <!--   <groups>
+      
+         <define name = "all">
+            <include name = "login"/>
+            <include name = "navigatebackword"/>
+             <include name = "onlinebanking"/>
+              <include name = "transferfunds"/>
+         </define>
+         
          <run>
-            <include name = "login" />
+            <include name = "all"/>
          </run>
-      </groups>
+         
+      </groups> -->
     <classes>
       <class name="example.NewTest"/>
     </classes>

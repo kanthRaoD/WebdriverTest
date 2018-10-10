@@ -101,6 +101,11 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.NewTest" hash-for-method="invokebrowser">invokebrowser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.NewTest" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -112,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.NewTest" hash-for-method="onlinebanking">onlinebanking</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.NewTest" hash-for-method="testEasy">testEasy</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,6 +144,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="invokebrowser">
+                  </a> <!-- invokebrowser -->
+                  <span class="method-name">invokebrowser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
@@ -161,13 +168,6 @@
                   <a name="onlinebanking">
                   </a> <!-- onlinebanking -->
                   <span class="method-name">onlinebanking</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testEasy">
-                  </a> <!-- testEasy -->
-                  <span class="method-name">testEasy</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -190,7 +190,6 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;myName&quot; value=&quot;XXXX&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;example.NewTest&quot;/&gt;
     &lt;/classes&gt;
@@ -234,30 +233,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testEasy')
+data.setCell(0, 1, 'invokebrowser')
 data.setCell(0, 2, 'example.NewTest')
-data.setCell(0, 3, 15718);
+data.setCell(0, 3, 13297);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'example.NewTest')
-data.setCell(1, 3, 3120);
+data.setCell(1, 3, 3802);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'transferfunds')
 data.setCell(2, 2, 'example.NewTest')
-data.setCell(2, 3, 2373);
+data.setCell(2, 3, 2440);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'onlinebanking')
 data.setCell(3, 2, 'example.NewTest')
-data.setCell(3, 3, 1440);
+data.setCell(3, 3, 1773);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'navigatebackword')
 data.setCell(4, 2, 'example.NewTest')
-data.setCell(4, 3, 618);
+data.setCell(4, 3, 1284);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -289,28 +288,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">testEasy</span>
-                <span class="method-start">3570 ms</span>
+                <span class="method-name">invokebrowser</span>
+                <span class="method-start">3498 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">19289 ms</span>
+                <span class="method-start">16796 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigatebackword</span>
-                <span class="method-start">22410 ms</span>
+                <span class="method-start">20600 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">onlinebanking</span>
-                <span class="method-start">23030 ms</span>
+                <span class="method-start">21886 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">transferfunds</span>
-                <span class="method-start">24473 ms</span>
+                <span class="method-start">23662 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">26848 ms</span>
+                <span class="method-start">26104 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
