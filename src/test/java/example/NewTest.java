@@ -2,8 +2,10 @@ package example;
 
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;		
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;		
 import org.testng.annotations.Test;	
 import org.testng.annotations.BeforeTest;
@@ -48,9 +50,41 @@ public class NewTest {
 		driver.navigate().back();
 		}
 		
+		@Test(priority=4)
+		public void onlinebanking()
+		{
+			driver.findElement(By.xpath("//*[@id='onlineBankingMenu']/div/strong")).click();
+		}
 		
 		
+		@Test(priority=5)
+		public void transferfunds()
+		{
+			driver.findElement(By.xpath("//*[@id='transfer_funds_link']")).click();
+			Select fromaccount=new Select(driver.findElement(By.xpath("//*[@id='tf_fromAccountId']")));
+			fromaccount.selectByIndex(2);
+			Select toaccount=new Select(driver.findElement(By.xpath("//*[@id='tf_fromAccountId']")));
+			toaccount.selectByIndex(2);
+			
+			driver.findElement(By.xpath("//*[@id='tf_amount']")).sendKeys("100");
+			driver.findElement(By.xpath("//*[@id='tf_description']")).sendKeys("transfer funds");
+			driver.findElement(By.xpath("//*[@id='btn_submit']")).click();
+			
+			driver.findElement(By.xpath("//*[@id='btn_submit']")).click();
+			
+			WebElement element=driver.findElement(By.xpath("//*[@id='transfer_funds_content']/div/div/div[1]"));
+			
 		
+			
+			if(	element.getText().equalsIgnoreCase("You successfully submitted your transaction."))
+			{
+				System.out.println("pass");
+			}else
+			{
+				System.out.println("fail");
+
+			}
+		}
 		
 		@BeforeTest
 		public void beforeTest() {	

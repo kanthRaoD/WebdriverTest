@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20358" started-at="2018-10-10T07:00:23Z" finished-at="2018-10-10T07:00:43Z">
+  <suite name="Suite" duration-ms="28217" started-at="2018-10-10T07:31:28Z" finished-at="2018-10-10T07:31:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20358" started-at="2018-10-10T07:00:23Z" finished-at="2018-10-10T07:00:43Z">
+    <test name="Test" duration-ms="28217" started-at="2018-10-10T07:31:28Z" finished-at="2018-10-10T07:31:56Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@457e2f02]" name="beforeTest" is-config="true" duration-ms="3541" started-at="2018-10-10T12:30:23Z" finished-at="2018-10-10T12:30:26Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@457e2f02]" name="beforeTest" is-config="true" duration-ms="3560" started-at="2018-10-10T13:01:28Z" finished-at="2018-10-10T13:01:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@457e2f02]" name="testEasy" duration-ms="12629" started-at="2018-10-10T12:30:26Z" finished-at="2018-10-10T12:30:39Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@457e2f02]" name="testEasy" duration-ms="15718" started-at="2018-10-10T13:01:32Z" finished-at="2018-10-10T13:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@457e2f02]" name="login" duration-ms="2944" started-at="2018-10-10T12:30:39Z" finished-at="2018-10-10T12:30:42Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@457e2f02]" name="login" duration-ms="3120" started-at="2018-10-10T13:01:47Z" finished-at="2018-10-10T13:01:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@457e2f02]" name="afterTest" is-config="true" duration-ms="1228" started-at="2018-10-10T12:30:42Z" finished-at="2018-10-10T12:30:43Z">
+        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@457e2f02]" name="navigatebackword" duration-ms="618" started-at="2018-10-10T13:01:51Z" finished-at="2018-10-10T13:01:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatebackword -->
+        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.NewTest@457e2f02]" name="onlinebanking" duration-ms="1440" started-at="2018-10-10T13:01:51Z" finished-at="2018-10-10T13:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onlinebanking -->
+        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.NewTest@457e2f02]" name="transferfunds" duration-ms="2373" started-at="2018-10-10T13:01:53Z" finished-at="2018-10-10T13:01:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferfunds -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@457e2f02]" name="afterTest" is-config="true" duration-ms="1363" started-at="2018-10-10T13:01:55Z" finished-at="2018-10-10T13:01:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
