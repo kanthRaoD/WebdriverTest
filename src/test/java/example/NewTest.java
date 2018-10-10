@@ -35,7 +35,7 @@ public class NewTest {
 		}	
 		
 		
-		@Test(priority=3)
+		@Test(priority=2)
 		public void login()
 		{
 			driver.findElement(By.xpath("//*[@id='signin_button']")).click();
