@@ -13,7 +13,7 @@ public class NewTest {
 	    private WebDriver driver;		
 		@Test(priority=1)	
 		
-		public void testEasy(String myName) {	
+		public void testEasy() {	
 			driver.get("http://zero.webappsecurity.com/");  
 			String title = driver.getTitle();	
 			System.out.println(title);

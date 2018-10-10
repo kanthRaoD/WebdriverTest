@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="myName" value="manisha"/>
+  <parameter name="myName" value="XXXX"/>
   <test name="Test(failed)">
-    <parameter name="myName" value="manisha"/>
+    <parameter name="myName" value="XXXX"/>
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="testvalidate" invocation-numbers="0"/>
+          <include name="testEasy"/>
           <include name="afterTest"/>
+          <include name="login"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- example.NewTest -->
-      <class name="example.TestngAnnotation">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="beforeMethod"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- example.TestngAnnotation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
