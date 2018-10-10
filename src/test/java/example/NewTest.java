@@ -12,7 +12,7 @@ import org.testng.annotations.AfterTest;
 public class NewTest {		
 	    private WebDriver driver;		
 		@Test(priority=1)	
-		@Parameters("myName")
+		
 		public void testEasy(String myName) {	
 			driver.get("http://zero.webappsecurity.com/");  
 			String title = driver.getTitle();	
@@ -23,7 +23,7 @@ public class NewTest {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			 System.out.println("Parameterized value is : " + myName);
+			 
 			//Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
 		}	
 		
@@ -38,6 +38,7 @@ public class NewTest {
 		@Test(priority=2)
 		public void login()
 		{
+			
 			driver.findElement(By.xpath("//*[@id='signin_button']")).click();
 			
 			driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys("username");;
