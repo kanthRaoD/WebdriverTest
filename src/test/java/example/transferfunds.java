@@ -21,18 +21,18 @@ public class transferfunds {
 	    @Test
 	     public void invokebrowser() {	
 	    	
-	    	ExtentReports logger= ExtentReports.get(NewTest.class);
-	    	logger.init("D:\\Extentreports\\advancedreporting.html", true);
+	    	ExtentReports logger= ExtentReports.get(transferfunds.class);
+	    	logger.init("D:\\Extentreports\\advancedreport.html", true);
 	    	logger.startTest("Verify Page Title");
 			driver.get("http://zero.webappsecurity.com/");  
 			logger.log(LogStatus.INFO, "Application is up on running");
 			
 			String title = driver.getTitle();	
 			logger.log(LogStatus.INFO, "title captured");
-			//Assert.assertTrue(title.contains("zero"));
-			//logger.log(LogStatus.INFO, "title is verified");
+			Assert.assertTrue(title.contains("Zero - Personal Banking"));
+			logger.log(LogStatus.PASS, "title is verified");
 			System.out.println(title);
-			logger.attachScreenshot("D:\\Extentreports\\screenshots\\xpath-selenium.png");
+			logger.attachScreenshot("C:\\Users\\M1047765\\Pictures\\xpath-selenium.png");
 			try {
 				Thread.sleep(10000);
 				

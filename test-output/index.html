@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,7 +106,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.transferfunds" hash-for-method="invokebrowser">invokebrowser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.NewTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.transferfunds" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -116,12 +126,27 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.transferfunds" hash-for-method="navigatebackword">navigatebackword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.NewTest" hash-for-method="onlinebanking">onlinebanking</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.transferfunds" hash-for-method="onlinebanking">onlinebanking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.NewTest" hash-for-method="transferfunds">transferfunds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="example.transferfunds" hash-for-method="transferfunds">transferfunds</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -179,6 +204,49 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">example.transferfunds</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invokebrowser">
+                  </a> <!-- invokebrowser -->
+                  <span class="method-name">invokebrowser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigatebackword">
+                  </a> <!-- navigatebackword -->
+                  <span class="method-name">navigatebackword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onlinebanking">
+                  </a> <!-- onlinebanking -->
+                  <span class="method-name">onlinebanking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="transferfunds">
+                  </a> <!-- transferfunds -->
+                  <span class="method-name">transferfunds</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -194,6 +262,11 @@
       &lt;class name=&quot;example.NewTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;example.transferfunds&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,6 +279,9 @@
             <ul>
               <li>
                 <span class="test-name">Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,32 +307,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invokebrowser')
 data.setCell(0, 2, 'example.NewTest')
-data.setCell(0, 3, 12827);
+data.setCell(0, 3, 15425);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'navigatebackword')
-data.setCell(1, 2, 'example.NewTest')
-data.setCell(1, 3, 10708);
+data.setCell(1, 1, 'invokebrowser')
+data.setCell(1, 2, 'example.transferfunds')
+data.setCell(1, 3, 15307);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
+data.setCell(2, 1, 'navigatebackword')
 data.setCell(2, 2, 'example.NewTest')
-data.setCell(2, 3, 3258);
+data.setCell(2, 3, 10770);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'onlinebanking')
-data.setCell(3, 2, 'example.NewTest')
-data.setCell(3, 3, 2323);
+data.setCell(3, 1, 'navigatebackword')
+data.setCell(3, 2, 'example.transferfunds')
+data.setCell(3, 3, 10695);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'transferfunds')
+data.setCell(4, 1, 'login')
 data.setCell(4, 2, 'example.NewTest')
-data.setCell(4, 3, 2136);
+data.setCell(4, 3, 6615);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'login')
+data.setCell(5, 2, 'example.transferfunds')
+data.setCell(5, 3, 5704);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'transferfunds')
+data.setCell(6, 2, 'example.transferfunds')
+data.setCell(6, 3, 2791);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'transferfunds')
+data.setCell(7, 2, 'example.NewTest')
+data.setCell(7, 3, 2423);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'onlinebanking')
+data.setCell(8, 2, 'example.NewTest')
+data.setCell(8, 3, 1642);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'onlinebanking')
+data.setCell(9, 2, 'example.transferfunds')
+data.setCell(9, 3, 1142);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -289,27 +385,58 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">invokebrowser</span>
-                <span class="method-start">3353 ms</span>
+                <span class="method-start">3372 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">16188 ms</span>
+                <span class="method-start">18803 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigatebackword</span>
-                <span class="method-start">19448 ms</span>
+                <span class="method-start">25419 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">onlinebanking</span>
-                <span class="method-start">30168 ms</span>
+                <span class="method-start">36196 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">transferfunds</span>
-                <span class="method-start">32493 ms</span>
+                <span class="method-start">37840 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">34632 ms</span>
+                <span class="method-start">40265 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">example.transferfunds</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">41519 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">invokebrowser</span>
+                <span class="method-start">43582 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">58890 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigatebackword</span>
+                <span class="method-start">64597 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">onlinebanking</span>
+                <span class="method-start">75295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">transferfunds</span>
+                <span class="method-start">76438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">79230 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

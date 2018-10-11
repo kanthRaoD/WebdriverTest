@@ -10,8 +10,35 @@
           <include name="login"/>
           <include name="beforeTest"/>
           <include name="onlinebanking"/>
+          <include name="invokebrowser"/>
         </methods>
       </class> <!-- example.NewTest -->
+      <class name="example.transferfunds">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- example.transferfunds -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test name="Test1(failed)">
+    <classes>
+      <class name="example.NewTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- example.NewTest -->
+      <class name="example.transferfunds">
+        <methods>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="invokebrowser"/>
+          <include name="transferfunds"/>
+          <include name="beforeTest"/>
+          <include name="onlinebanking"/>
+        </methods>
+      </class> <!-- example.transferfunds -->
+    </classes>
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
