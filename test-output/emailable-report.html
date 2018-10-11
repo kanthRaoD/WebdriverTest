@@ -31,21 +31,37 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">27.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">21.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">example.NewTest</td><td><a href="#m1"><b>invokebrowser</b>  </a></td><td class="numi">1</td><td>1539238307930</td><td class="numi">6036</td></tr>
 <tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="5">example.NewTest</td><td><a href="#m1"><b>invokebrowser</b>  </a></td><td class="numi">1</td><td>1539165261024</td><td class="numi">13297</td></tr><tr class="passedodd"><td><a href="#m2"><b>login</b>  </a></td><td class="numi">1</td><td>1539165274322</td><td class="numi">3802</td></tr><tr class="passedodd"><td><a href="#m3"><b>navigatebackword</b>  </a></td><td class="numi">1</td><td>1539165278126</td><td class="numi">1284</td></tr><tr class="passedodd"><td><a href="#m4"><b>onlinebanking</b>  </a></td><td class="numi">1</td><td>1539165279412</td><td class="numi">1773</td></tr><tr class="passedodd"><td><a href="#m5"><b>transferfunds</b>  </a></td><td class="numi">1</td><td>1539165281188</td><td class="numi">2440</td></tr>
+<tr class="passedodd"><td rowspan="4">example.NewTest</td><td><a href="#m2"><b>login</b>  </a></td><td class="numi">1</td><td>1539238313971</td><td class="numi">5920</td></tr><tr class="passedodd"><td><a href="#m3"><b>navigatebackword</b>  </a></td><td class="numi">1</td><td>1539238319894</td><td class="numi">968</td></tr><tr class="passedodd"><td><a href="#m4"><b>onlinebanking</b>  </a></td><td class="numi">1</td><td>1539238320866</td><td class="numi">1424</td></tr><tr class="passedodd"><td><a href="#m5"><b>transferfunds</b>  </a></td><td class="numi">1</td><td>1539238322293</td><td class="numi">2192</td></tr>
 </table>
 <h1>Test</h1>
 <h2 id="m1">example.NewTest:invokebrowser</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at example.NewTest.invokebrowser(NewTest.java:32)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">example.NewTest:navigatebackword</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">example.NewTest:transferfunds</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m4">example.NewTest:login</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>username</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m5">example.NewTest:onlinebanking</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>

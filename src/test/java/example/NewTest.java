@@ -7,19 +7,32 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;		
-import org.testng.annotations.Test;	
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;		
 public class NewTest {		
 	    private WebDriver driver;		
-		
+	    
 	    @Test
-	    //(groups ={"login","navigatebackword","onlinebanking","transferfunds"})	;
-		public void invokebrowser() {	
+	     public void invokebrowser() {	
+	    	
+	    	ExtentReports logger= ExtentReports.get(NewTest.class);
+	    	logger.init("D:\\Extentreports\\advancedreporting.html", true);
+	    	logger.startTest("Verify Page Title");
 			driver.get("http://zero.webappsecurity.com/");  
+			logger.log(LogStatus.INFO, "Application is up on running");
+			
 			String title = driver.getTitle();	
+			logger.log(LogStatus.INFO, "title captured");
+			Assert.assertTrue(title.contains("zero"));
+			logger.log(LogStatus.INFO, "title is verified");
 			System.out.println(title);
+			logger.attachScreenshot("D:\\Extentreports\\screenshots\\xpath-selenium.png");
 			try {
 				Thread.sleep(10000);
 			} catch (InterruptedException e) {
@@ -27,19 +40,20 @@ public class NewTest {
 				e.printStackTrace();
 			}
 			 
-					
+			logger.endTest();		
 		}	
 		
 	
 		
 		@Test
+		@Parameters("User_name")
 		//(groups = { "login"})	
-		public void login()
+		public void login(String User_name)
 		{
 			
 			driver.findElement(By.xpath("//*[@id='signin_button']")).click();
 			
-			driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys("username");;
+			driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys(User_name);;
 			
 			driver.findElement(By.xpath("//*[@id='user_password']")).sendKeys("password");
 			
@@ -47,22 +61,22 @@ public class NewTest {
 		}
 		
 		@Test
-		//(groups = { "navigatebackword"})	
+		
 		public void navigatebackword()
 		{
 		driver.navigate().back();
 		}
 		
-		@Test
-		//(groups = { "onlinebanking"})
+		@Test(dependsOnMethods ={"navigatebackword"})
+		
 		public void onlinebanking()
 		{
 			driver.findElement(By.xpath("//*[@id='onlineBankingMenu']/div/strong")).click();
 		}
 		
 		
-		@Test
-		//(groups = { "transferfunds"})
+		@Test(dependsOnMethods ={"onlinebanking"})
+	
 		public void transferfunds()
 		{
 			driver.findElement(By.xpath("//*[@id='transfer_funds_link']")).click();
@@ -95,6 +109,8 @@ public class NewTest {
 		public void beforeTest() {	
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
 		    driver = new ChromeDriver();
+		   // driver.manage().window().maximize();
+		   // logger.log(LogStatus.INFO, "Browser is up on running");
 		}		
 		@AfterTest
 		public void afterTest() {

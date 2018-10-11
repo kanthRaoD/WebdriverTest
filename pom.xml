@@ -21,6 +21,13 @@
             <artifactId>testng</artifactId>								
             <version>6.8</version>								
             <scope>test</scope>							  			
-       </dependency>				
+       </dependency>
+       <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>1.4</version>
+</dependency>
+       				
 </dependencies>
 </project>
