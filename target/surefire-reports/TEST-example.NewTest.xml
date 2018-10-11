@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="1" name="example.NewTest" time="38.006" errors="0" skipped="2">
+<testsuite tests="5" failures="0" name="example.NewTest" time="33.684" errors="0" skipped="0">
   <properties>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -33,33 +33,33 @@
     <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 78 Stepping 3, GenuineIntel"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="LOCALAPPDATA" value="C:\Users\M1047765\AppData\Local"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/59/display/redirect?page=changes"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/60/display/redirect?page=changes"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="user.script" value=""/>
     <property name="path.separator" value=";"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="BUILD_TAG" value="jenkins-WebdriverTest-59"/>
+    <property name="BUILD_TAG" value="jenkins-WebdriverTest-60"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Apache-maven\apache-maven-3.5.2 D:\apachetomcat\apache-tomcat-8.5.8\webapps\jenkins\WEB-INF\lib\remoting-3.23.jar C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 63157"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Apache-maven\apache-maven-3.5.2 D:\apachetomcat\apache-tomcat-8.5.8\webapps\jenkins\WEB-INF\lib\remoting-3.23.jar C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 54266"/>
     <property name="HUDSON_URL" value="http://localhost:8080/jenkins/"/>
     <property name="JENKINS_SERVER_COOKIE" value="3111a127844bc921"/>
     <property name="=D:" value="D:\apachetomcat\apache-tomcat-8.5.8\bin"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
-    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_152/bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Apache-maven\apache-maven-3.5.2;C:\Users\M1047765\AppData\Local\Microsoft\WindowsApps;C:\Users\M1047765\AppData\Roaming\npm"/>
-    <property name="GIT_COMMIT" value="bedcdc48aa6ff8c6cd3d336032d86334bbeab430"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_152/bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Apache-maven\apache-maven-3.5.2;%ANT_HOME%\bin;C:\Users\M1047765\AppData\Local\Microsoft\WindowsApps;C:\Users\M1047765\AppData\Roaming\npm"/>
+    <property name="GIT_COMMIT" value="cb2e3dd67d10208cb5e78864dfbc937349169e60"/>
     <property name="java.io.tmpdir" value="C:\Users\M1047765\AppData\Local\Temp\"/>
     <property name="APPDATA" value="C:\Users\M1047765\AppData\Roaming"/>
     <property name="user.language" value="en"/>
     <property name="CATALINA_TMPDIR" value="D:\apachetomcat\apache-tomcat-8.5.8\temp"/>
     <property name="line.separator" value="
 "/>
-    <property name="BUILD_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/59/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/60/"/>
     <property name="ACTION" value="start"/>
     <property name="M2_HOME" value="C:\Apache-maven\apache-maven-3.5.2"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="sun.desktop" value="windows"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="BUILD_DISPLAY_NAME" value="#59"/>
+    <property name="BUILD_DISPLAY_NAME" value="#60"/>
     <property name="OS" value="Windows_NT"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="CATALINA_BASE" value="D:\apachetomcat\apache-tomcat-8.5.8"/>
@@ -79,9 +79,9 @@
     <property name="os.name" value="Windows 10"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="59"/>
+    <property name="BUILD_NUMBER" value="60"/>
     <property name="maven3.interceptor" value="C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_152\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Apache-maven\apache-maven-3.5.2/bin;C:\Program Files\Java\jdk1.8.0_152/bin;C:\Program Files\Java\jdk1.8.0_152/bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Apache-maven\apache-maven-3.5.2;C:\Users\M1047765\AppData\Local\Microsoft\WindowsApps;C:\Users\M1047765\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_152\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Apache-maven\apache-maven-3.5.2/bin;C:\Program Files\Java\jdk1.8.0_152/bin;C:\Program Files\Java\jdk1.8.0_152/bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Apache-maven\apache-maven-3.5.2;%ANT_HOME%\bin;C:\Users\M1047765\AppData\Local\Microsoft\WindowsApps;C:\Users\M1047765\AppData\Roaming\npm;."/>
     <property name="HOMEDRIVE" value="C:"/>
     <property name="POM_GROUPID" value="WebdriverTest"/>
     <property name="POM_ARTIFACTID" value="WebdriverTest"/>
@@ -90,13 +90,14 @@
     <property name="LOGGING_MANAGER" value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
     <property name="_RUNJDB" value="&quot;C:\Program Files\Java\jdk1.8.0_152\bin\jdb.exe&quot;"/>
     <property name="JOB_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/"/>
-    <property name="GIT_PREVIOUS_COMMIT" value="7a138d17114ada85d9e4de943abb924c52be7979"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="bedcdc48aa6ff8c6cd3d336032d86334bbeab430"/>
+    <property name="ANT_HOME" value="D:\apache-ant-1.10.5"/>
     <property name="OneDrive" value="C:\Users\Administrator\OneDrive"/>
     <property name="GIT_BRANCH" value="origin/master"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/59/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/60/display/redirect"/>
     <property name="MAINCLASS" value="org.apache.catalina.startup.Bootstrap"/>
     <property name="JENKINS_HOME" value="C:\Users\M1047765\.jenkins"/>
-    <property name="BUILD_ID" value="59"/>
+    <property name="BUILD_ID" value="60"/>
     <property name="TEMP" value="C:\Users\M1047765\AppData\Local\Temp"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\bin"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -143,8 +144,8 @@
     <property name="FPS_BROWSER_APP_PROFILE_STRING" value="Internet Explorer"/>
     <property name="SystemRoot" value="C:\windows"/>
     <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="FPS_BROWSER_USER_PROFILE_STRING" value="Default"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="file.separator" value="\"/>
     <property name="java.runtime.version" value="1.8.0_152-b16"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_152\jre\classes"/>
@@ -160,48 +161,9 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="GIT_URL" value="https://github.com/kanthRaoD/WebdriverTest.git"/>
   </properties>
-  <testcase classname="example.NewTest" name="navigatebackword" time="10.041"/>
-  <testcase classname="example.NewTest" name="onlinebanking" time="0.05">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;onlineBankingMenu&apos;]/div/strong&quot;}
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 35 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;A2ML22163&apos;, ip: &apos;172.23.42.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_152&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1047765\AppData\Local\Temp\scoped_dir7992_8415}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: cad2aa2db41d09c9c6073da26497a34f
-*** Element info: {Using=xpath, value=//*[@id=&apos;onlineBankingMenu&apos;]/div/strong}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;onlineBankingMenu&apos;]/div/strong&quot;}
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 35 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;A2ML22163&apos;, ip: &apos;172.23.42.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_152&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1047765\AppData\Local\Temp\scoped_dir7992_8415}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: cad2aa2db41d09c9c6073da26497a34f
-*** Element info: {Using=xpath, value=//*[@id=&apos;onlineBankingMenu&apos;]/div/strong}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at example.NewTest.onlinebanking(NewTest.java:76)
-</failure>
-  </testcase>
-  <testcase classname="example.NewTest" name="login" time="0.051">
-    <skipped/>
-  </testcase>
-  <testcase classname="example.NewTest" name="invokebrowser" time="13.929"/>
-  <testcase classname="example.NewTest" name="transferfunds" time="13.935">
-    <skipped/>
-  </testcase>
+  <testcase classname="example.NewTest" name="invokebrowser" time="15.558"/>
+  <testcase classname="example.NewTest" name="login" time="3.154"/>
+  <testcase classname="example.NewTest" name="navigatebackword" time="10.614"/>
+  <testcase classname="example.NewTest" name="onlinebanking" time="2.077"/>
+  <testcase classname="example.NewTest" name="transferfunds" time="2.281"/>
 </testsuite>
