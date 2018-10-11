@@ -2,20 +2,20 @@
 <testng-results skipped="1" failed="2" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="example.NewTest" duration-ms="20693" started-at="2018-10-11T06:25:27Z" finished-at="2018-10-11T06:25:48Z">
+  <suite name="example.NewTest" duration-ms="20152" started-at="2018-10-11T06:34:49Z" finished-at="2018-10-11T06:35:09Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="20693" started-at="2018-10-11T06:25:27Z" finished-at="2018-10-11T06:25:48Z">
+    <test name="Command line test" duration-ms="20152" started-at="2018-10-11T06:34:49Z" finished-at="2018-10-11T06:35:09Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@4e04a765]" name="beforeTest" is-config="true" duration-ms="3426" started-at="2018-10-11T11:55:27Z" finished-at="2018-10-11T11:55:31Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@4e04a765]" name="beforeTest" is-config="true" duration-ms="3647" started-at="2018-10-11T12:04:49Z" finished-at="2018-10-11T12:04:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:example.NewTest@4e04a765]" name="invokebrowser" duration-ms="15780" started-at="2018-10-11T11:55:31Z" finished-at="2018-10-11T11:55:47Z">
+        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:example.NewTest@4e04a765]" name="invokebrowser" duration-ms="14998" started-at="2018-10-11T12:04:52Z" finished-at="2018-10-11T12:05:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokebrowser -->
-        <test-method status="FAIL" signature="login(java.lang.String)[pri:0, instance:example.NewTest@4e04a765]" name="login" duration-ms="0" started-at="2018-10-11T11:55:47Z" finished-at="2018-10-11T11:55:47Z">
+        <test-method status="FAIL" signature="login(java.lang.String)[pri:0, instance:example.NewTest@4e04a765]" name="login" duration-ms="0" started-at="2018-10-11T12:05:07Z" finished-at="2018-10-11T12:05:07Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -63,36 +63,36 @@ Parameter 'User_name' is required by @Test on method login but has not been mark
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@4e04a765]" name="navigatebackword" duration-ms="166" started-at="2018-10-11T11:55:47Z" finished-at="2018-10-11T11:55:47Z">
+        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@4e04a765]" name="navigatebackword" duration-ms="195" started-at="2018-10-11T12:05:07Z" finished-at="2018-10-11T12:05:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatebackword -->
-        <test-method status="FAIL" signature="onlinebanking()[pri:0, instance:example.NewTest@4e04a765]" name="onlinebanking" duration-ms="47" started-at="2018-10-11T11:55:47Z" depends-on-methods="example.NewTest.navigatebackword" finished-at="2018-10-11T11:55:47Z">
+        <test-method status="FAIL" signature="onlinebanking()[pri:0, instance:example.NewTest@4e04a765]" name="onlinebanking" duration-ms="43" started-at="2018-10-11T12:05:08Z" depends-on-methods="example.NewTest.navigatebackword" finished-at="2018-10-11T12:05:08Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='onlineBankingMenu']/div/strong"}
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40 milliseconds
+Command duration or timeout: 38 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
 System info: host: 'A2ML22163', ip: '172.23.42.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1047765\AppData\Local\Temp\scoped_dir19004_3599}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 0ac574f2b49995004ba8e7693d7a790b
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1047765\AppData\Local\Temp\scoped_dir18548_24945}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 501384a10e4459310572ad473761bfed
 *** Element info: {Using=xpath, value=//*[@id='onlineBankingMenu']/div/strong}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='onlineBankingMenu']/div/strong"}
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40 milliseconds
+Command duration or timeout: 38 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
 System info: host: 'A2ML22163', ip: '172.23.42.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1047765\AppData\Local\Temp\scoped_dir19004_3599}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 0ac574f2b49995004ba8e7693d7a790b
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1047765\AppData\Local\Temp\scoped_dir18548_24945}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 501384a10e4459310572ad473761bfed
 *** Element info: {Using=xpath, value=//*[@id='onlineBankingMenu']/div/strong}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -145,11 +145,11 @@ Session ID: 0ac574f2b49995004ba8e7693d7a790b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onlinebanking -->
-        <test-method status="SKIP" signature="transferfunds()[pri:0, instance:example.NewTest@4e04a765]" name="transferfunds" duration-ms="0" started-at="2018-10-11T11:55:47Z" depends-on-methods="example.NewTest.onlinebanking" finished-at="2018-10-11T11:55:47Z">
+        <test-method status="SKIP" signature="transferfunds()[pri:0, instance:example.NewTest@4e04a765]" name="transferfunds" duration-ms="0" started-at="2018-10-11T12:05:08Z" depends-on-methods="example.NewTest.onlinebanking" finished-at="2018-10-11T12:05:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferfunds -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@4e04a765]" name="afterTest" is-config="true" duration-ms="1249" started-at="2018-10-11T11:55:47Z" finished-at="2018-10-11T11:55:48Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@4e04a765]" name="afterTest" is-config="true" duration-ms="1233" started-at="2018-10-11T12:05:08Z" finished-at="2018-10-11T12:05:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

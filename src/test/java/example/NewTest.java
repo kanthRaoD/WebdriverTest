@@ -62,12 +62,14 @@ public class NewTest {
 		
 		@Test
 		
-		public void navigatebackword()
+		public void navigatebackword() throws InterruptedException
 		{
+			
 		driver.navigate().back();
+		Thread.sleep(10000);
 		}
 		
-		@Test(dependsOnMethods ={"navigatebackword"})
+		@Test
 		
 		public void onlinebanking()
 		{
