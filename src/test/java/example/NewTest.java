@@ -17,7 +17,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;		
 public class NewTest {		
 	    private WebDriver driver;		
-	    
+		
 	    @Test
 	     public void invokebrowser() {	
 	    	
@@ -30,67 +30,78 @@ public class NewTest {
 			String title = driver.getTitle();	
 			logger.log(LogStatus.INFO, "title captured");
 			//Assert.assertTrue(title.contains("zero"));
-			logger.log(LogStatus.INFO, "title is verified");
+			//logger.log(LogStatus.INFO, "title is verified");
 			System.out.println(title);
 			logger.attachScreenshot("D:\\Extentreports\\screenshots\\xpath-selenium.png");
 			try {
 				Thread.sleep(10000);
+				
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			 
-			logger.endTest();		
+					
 		}	
 		
 	
 		
-		@Test
-		@Parameters("User_name")
+		@Test(priority=2)
+	//	@Parameters("User_name")
 		//(groups = { "login"})	
-		public void login(String User_name)
+		public void login()
 		{
-			
+			ExtentReports logger1= ExtentReports.get(NewTest.class); 
 			driver.findElement(By.xpath("//*[@id='signin_button']")).click();
-			
-			driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys(User_name);;
-			
+			logger1.log(LogStatus.INFO, "click on signin button");
+			driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys("username");;
+			logger1.log(LogStatus.INFO, "Enter username");
 			driver.findElement(By.xpath("//*[@id='user_password']")).sendKeys("password");
-			
+			logger1.log(LogStatus.INFO, "Enter password");
 			driver.findElement(By.xpath("//*[@id='login_form']/div[2]/input")).click();
+		logger1.log(LogStatus.INFO, "click on login button");
 		}
 		
-		@Test
+		@Test(priority=3)
 		
 		public void navigatebackword() throws InterruptedException
 		{
-			
+		//	ExtentReports logger2= ExtentReports.get(NewTest.class); 	
 		driver.navigate().back();
+		//logger2.log(LogStatus.INFO, "Navigate backword");
 		Thread.sleep(10000);
 		}
 		
-		@Test
+		@Test(priority=4)
 		
 		public void onlinebanking()
 		{
+			//ExtentReports logger3= ExtentReports.get(NewTest.class); 
 			driver.findElement(By.xpath("//*[@id='onlineBankingMenu']/div/strong")).click();
+		//	logger3.log(LogStatus.INFO, "click on online banking");
 		}
 		
 		
-		@Test(dependsOnMethods ={"onlinebanking"})
+		@Test(priority=5)
 	
 		public void transferfunds()
 		{
+			//ExtentReports logger4= ExtentReports.get(NewTest.class); 
 			driver.findElement(By.xpath("//*[@id='transfer_funds_link']")).click();
+			//logger4.log(LogStatus.INFO, "click on transfer funds links");
 			Select fromaccount=new Select(driver.findElement(By.xpath("//*[@id='tf_fromAccountId']")));
 			fromaccount.selectByIndex(2);
+		//	logger4.log(LogStatus.INFO, "select fromaccount");
 			Select toaccount=new Select(driver.findElement(By.xpath("//*[@id='tf_fromAccountId']")));
 			toaccount.selectByIndex(2);
-			
+		//	logger4.log(LogStatus.INFO, "select to account");
 			driver.findElement(By.xpath("//*[@id='tf_amount']")).sendKeys("100");
+		//	logger4.log(LogStatus.INFO, "Enter amount");
 			driver.findElement(By.xpath("//*[@id='tf_description']")).sendKeys("transfer funds");
+		//	logger4.log(LogStatus.INFO, "Enter description");
 			driver.findElement(By.xpath("//*[@id='btn_submit']")).click();
-			
+		//	logger4.log(LogStatus.INFO, "click on submit button");
+				
 			driver.findElement(By.xpath("//*[@id='btn_submit']")).click();
 			
 			WebElement element=driver.findElement(By.xpath("//*[@id='transfer_funds_content']/div/div/div[1]"));
@@ -99,9 +110,11 @@ public class NewTest {
 			
 			if(	element.getText().equalsIgnoreCase("You successfully submitted your transaction."))
 			{
+		//		logger4.log(LogStatus.INFO, "Pass");
 				System.out.println("pass");
 			}else
 			{
+		//		logger4.log(LogStatus.INFO, "Fail");
 				System.out.println("fail");
 
 			}
@@ -116,6 +129,8 @@ public class NewTest {
 		}		
 		@AfterTest
 		public void afterTest() {
-			driver.quit();			
+			ExtentReports logger5= ExtentReports.get(NewTest.class); 
+			driver.quit();	
+			logger5.endTest();
 		}		
 }	

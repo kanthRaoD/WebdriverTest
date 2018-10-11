@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="User_name" value="username"/>
   <test name="Test(failed)">
-    <parameter name="User_name" value="username"/>
     <classes>
       <class name="example.NewTest">
         <methods>
+          <include name="transferfunds"/>
           <include name="afterTest"/>
+          <include name="login"/>
           <include name="beforeTest"/>
-          <include name="invokebrowser"/>
+          <include name="onlinebanking"/>
         </methods>
       </class> <!-- example.NewTest -->
     </classes>

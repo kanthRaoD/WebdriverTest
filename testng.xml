@@ -19,7 +19,7 @@
          
       </groups> -->
       
-      <parameter name = "User_name" value="username"/> 
+<!--       <parameter name = "User_name" value="username"/>  -->
       
     <classes>
       <class name="example.NewTest"/>
