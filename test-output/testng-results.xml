@@ -1,73 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="2" total="20" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="80526" started-at="2018-10-11T10:13:47Z" finished-at="2018-10-11T10:15:07Z">
+  <suite name="Suite" duration-ms="156962" started-at="2018-10-15T06:46:33Z" finished-at="2018-10-15T06:49:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="41508" started-at="2018-10-11T10:13:47Z" finished-at="2018-10-11T10:14:28Z">
+    <test name="Test" duration-ms="48426" started-at="2018-10-15T06:46:33Z" finished-at="2018-10-15T06:47:21Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@457e2f02]" name="beforeTest" is-config="true" duration-ms="3363" started-at="2018-10-11T15:43:47Z" finished-at="2018-10-11T15:43:50Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@457e2f02]" name="beforeTest" is-config="true" duration-ms="2839" started-at="2018-10-15T12:16:33Z" finished-at="2018-10-15T12:16:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:example.NewTest@457e2f02]" name="invokebrowser" duration-ms="15425" started-at="2018-10-11T15:43:50Z" finished-at="2018-10-11T15:44:06Z">
+        <test-method status="FAIL" signature="invokebrowser()[pri:0, instance:example.NewTest@457e2f02]" name="invokebrowser" duration-ms="26029" started-at="2018-10-15T12:16:36Z" finished-at="2018-10-15T12:17:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at example.NewTest.invokebrowser(NewTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokebrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@457e2f02]" name="login" duration-ms="6615" started-at="2018-10-11T15:44:06Z" finished-at="2018-10-11T15:44:12Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@457e2f02]" name="login" duration-ms="3252" started-at="2018-10-15T12:17:02Z" finished-at="2018-10-15T12:17:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@457e2f02]" name="navigatebackword" duration-ms="10770" started-at="2018-10-11T15:44:12Z" finished-at="2018-10-11T15:44:23Z">
+        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@457e2f02]" name="navigatebackword" duration-ms="10654" started-at="2018-10-15T12:17:05Z" finished-at="2018-10-15T12:17:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatebackword -->
-        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.NewTest@457e2f02]" name="onlinebanking" duration-ms="1642" started-at="2018-10-11T15:44:23Z" finished-at="2018-10-11T15:44:25Z">
+        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.NewTest@457e2f02]" name="onlinebanking" duration-ms="2107" started-at="2018-10-15T12:17:16Z" finished-at="2018-10-15T12:17:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onlinebanking -->
-        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.NewTest@457e2f02]" name="transferfunds" duration-ms="2423" started-at="2018-10-11T15:44:25Z" finished-at="2018-10-11T15:44:27Z">
+        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.NewTest@457e2f02]" name="transferfunds" duration-ms="2203" started-at="2018-10-15T12:17:18Z" finished-at="2018-10-15T12:17:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferfunds -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@457e2f02]" name="afterTest" is-config="true" duration-ms="1238" started-at="2018-10-11T15:44:27Z" finished-at="2018-10-11T15:44:28Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@457e2f02]" name="afterTest" is-config="true" duration-ms="1303" started-at="2018-10-15T12:17:20Z" finished-at="2018-10-15T12:17:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- example.NewTest -->
     </test> <!-- Test -->
-    <test name="Test1" duration-ms="39003" started-at="2018-10-11T10:14:28Z" finished-at="2018-10-11T10:15:07Z">
-      <class name="example.transferfunds">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.transferfunds@6a4f787b]" name="beforeTest" is-config="true" duration-ms="2062" started-at="2018-10-11T15:44:28Z" finished-at="2018-10-11T15:44:30Z">
+    <test name="Test1" duration-ms="62621" started-at="2018-10-15T06:47:21Z" finished-at="2018-10-15T06:48:24Z">
+      <class name="example.NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@604ed9f0]" name="beforeTest" is-config="true" duration-ms="2574" started-at="2018-10-15T12:17:21Z" finished-at="2018-10-15T12:17:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:example.transferfunds@6a4f787b]" name="invokebrowser" duration-ms="15307" started-at="2018-10-11T15:44:30Z" finished-at="2018-10-11T15:44:46Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.transferfunds@685cb137]" name="beforeTest" is-config="true" duration-ms="2605" started-at="2018-10-15T12:17:24Z" finished-at="2018-10-15T12:17:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="invokebrowser()[pri:0, instance:example.NewTest@604ed9f0]" name="invokebrowser" duration-ms="5178" started-at="2018-10-15T12:17:59Z" finished-at="2018-10-15T12:18:04Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at example.NewTest.invokebrowser(NewTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokebrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:example.transferfunds@6a4f787b]" name="login" duration-ms="5704" started-at="2018-10-11T15:44:46Z" finished-at="2018-10-11T15:44:51Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@604ed9f0]" name="login" duration-ms="1885" started-at="2018-10-15T12:18:04Z" finished-at="2018-10-15T12:18:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.transferfunds@6a4f787b]" name="navigatebackword" duration-ms="10695" started-at="2018-10-11T15:44:51Z" finished-at="2018-10-11T15:45:02Z">
+        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@604ed9f0]" name="navigatebackword" duration-ms="11708" started-at="2018-10-15T12:18:06Z" finished-at="2018-10-15T12:18:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatebackword -->
-        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.transferfunds@6a4f787b]" name="onlinebanking" duration-ms="1142" started-at="2018-10-11T15:45:02Z" finished-at="2018-10-11T15:45:03Z">
+        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.NewTest@604ed9f0]" name="onlinebanking" duration-ms="1641" started-at="2018-10-15T12:18:18Z" finished-at="2018-10-15T12:18:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onlinebanking -->
-        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.transferfunds@6a4f787b]" name="transferfunds" duration-ms="2791" started-at="2018-10-11T15:45:03Z" finished-at="2018-10-11T15:45:06Z">
+        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.NewTest@604ed9f0]" name="transferfunds" duration-ms="2272" started-at="2018-10-15T12:18:19Z" finished-at="2018-10-15T12:18:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferfunds -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.transferfunds@6a4f787b]" name="afterTest" is-config="true" duration-ms="1291" started-at="2018-10-11T15:45:06Z" finished-at="2018-10-11T15:45:07Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@604ed9f0]" name="afterTest" is-config="true" duration-ms="1270" started-at="2018-10-15T12:18:21Z" finished-at="2018-10-15T12:18:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.transferfunds@685cb137]" name="afterTest" is-config="true" duration-ms="1248" started-at="2018-10-15T12:18:23Z" finished-at="2018-10-15T12:18:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- example.NewTest -->
+      <class name="example.transferfunds">
+        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:example.transferfunds@685cb137]" name="invokebrowser" duration-ms="15337" started-at="2018-10-15T12:17:27Z" finished-at="2018-10-15T12:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokebrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:example.transferfunds@685cb137]" name="login" duration-ms="2289" started-at="2018-10-15T12:17:42Z" finished-at="2018-10-15T12:17:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.transferfunds@685cb137]" name="navigatebackword" duration-ms="10693" started-at="2018-10-15T12:17:44Z" finished-at="2018-10-15T12:17:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatebackword -->
+        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.transferfunds@685cb137]" name="onlinebanking" duration-ms="1748" started-at="2018-10-15T12:17:55Z" finished-at="2018-10-15T12:17:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onlinebanking -->
+        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.transferfunds@685cb137]" name="transferfunds" duration-ms="2150" started-at="2018-10-15T12:17:57Z" finished-at="2018-10-15T12:17:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferfunds -->
       </class> <!-- example.transferfunds -->
     </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="45881" started-at="2018-10-15T06:48:24Z" finished-at="2018-10-15T06:49:10Z">
+      <class name="example.Paybills">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.Paybills@39c0f4a]" name="beforeTest" is-config="true" duration-ms="2615" started-at="2018-10-15T12:18:24Z" finished-at="2018-10-15T12:18:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="paybills()[pri:0, instance:example.Paybills@39c0f4a]" name="paybills" duration-ms="12499" started-at="2018-10-15T12:18:27Z" finished-at="2018-10-15T12:18:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paybills -->
+        <test-method status="PASS" signature="login()[pri:0, instance:example.Paybills@39c0f4a]" name="login" duration-ms="2610" started-at="2018-10-15T12:18:39Z" finished-at="2018-10-15T12:18:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.Paybills@39c0f4a]" name="navigatebackword" duration-ms="10636" started-at="2018-10-15T12:18:42Z" finished-at="2018-10-15T12:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatebackword -->
+        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.Paybills@39c0f4a]" name="onlinebanking" duration-ms="2853" started-at="2018-10-15T12:18:52Z" finished-at="2018-10-15T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onlinebanking -->
+        <test-method status="PASS" signature="paybills1()[pri:0, instance:example.Paybills@39c0f4a]" name="paybills1" duration-ms="13381" started-at="2018-10-15T12:18:55Z" finished-at="2018-10-15T12:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paybills1 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.Paybills@39c0f4a]" name="afterTest" is-config="true" duration-ms="1282" started-at="2018-10-15T12:19:09Z" finished-at="2018-10-15T12:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- example.Paybills -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -29,7 +29,23 @@
     <test thread-count="5" name="Test1">
     <classes>
       <class name="example.transferfunds"/>
+       <class name="example.NewTest"/>
     </classes>
+    
+    
+    
   </test>   
+  
+    <test thread-count="5" name="Test2">
+    <classes>
+      <class name="example.Paybills"/>
+      
+    </classes>
+    
+    
+    
+  </test> 
+  
+  
   
 </suite> 

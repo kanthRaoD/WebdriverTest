@@ -5,14 +5,19 @@
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="transferfunds"/>
           <include name="afterTest"/>
-          <include name="login"/>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="onlinebanking"/>
+          <include name="beforeTest"/>
           <include name="invokebrowser"/>
         </methods>
       </class> <!-- example.NewTest -->
+      <class name="example.Paybills">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- example.Paybills -->
       <class name="example.transferfunds">
         <methods>
           <include name="afterTest"/>
@@ -26,17 +31,22 @@
       <class name="example.NewTest">
         <methods>
           <include name="afterTest"/>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="invokebrowser"/>
         </methods>
       </class> <!-- example.NewTest -->
+      <class name="example.Paybills">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- example.Paybills -->
       <class name="example.transferfunds">
         <methods>
-          <include name="login"/>
           <include name="afterTest"/>
-          <include name="invokebrowser"/>
-          <include name="transferfunds"/>
           <include name="beforeTest"/>
-          <include name="onlinebanking"/>
         </methods>
       </class> <!-- example.transferfunds -->
     </classes>
