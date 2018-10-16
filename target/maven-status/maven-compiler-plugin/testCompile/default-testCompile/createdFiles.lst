@@ -1,3 +1,6 @@
 example\NewTest.class
-example\Paybills.class
 example\transferfunds.class
+com\extentreport\BasicExtentReport.class
+ExtentReport\ExtentReportsEx.class
+GenericLibrary\GetScreenShot.class
+example\Paybills.class
