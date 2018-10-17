@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="example.NewTest" duration-ms="59370" started-at="2018-10-16T12:03:18Z" finished-at="2018-10-16T12:04:18Z">
+  <suite name="example.NewTest" duration-ms="40400" started-at="2018-10-17T06:16:00Z" finished-at="2018-10-17T06:16:40Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="59370" started-at="2018-10-16T12:03:18Z" finished-at="2018-10-16T12:04:18Z">
+    <test name="Command line test" duration-ms="40400" started-at="2018-10-17T06:16:00Z" finished-at="2018-10-17T06:16:40Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@2ef9b8bc]" name="beforeTest" is-config="true" duration-ms="3878" started-at="2018-10-16T17:33:18Z" finished-at="2018-10-16T17:33:22Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@2ef9b8bc]" name="beforeTest" is-config="true" duration-ms="4176" started-at="2018-10-17T11:46:00Z" finished-at="2018-10-17T11:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:example.NewTest@2ef9b8bc]" name="invokebrowser" duration-ms="20783" started-at="2018-10-16T17:33:22Z" finished-at="2018-10-16T17:33:43Z">
+        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:example.NewTest@2ef9b8bc]" name="invokebrowser" duration-ms="12811" started-at="2018-10-17T11:46:04Z" finished-at="2018-10-17T11:46:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokebrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@2ef9b8bc]" name="login" duration-ms="8648" started-at="2018-10-16T17:33:43Z" finished-at="2018-10-16T17:33:52Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@2ef9b8bc]" name="login" duration-ms="6353" started-at="2018-10-17T11:46:17Z" finished-at="2018-10-17T11:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@2ef9b8bc]" name="navigatebackword" duration-ms="14143" started-at="2018-10-16T17:33:52Z" finished-at="2018-10-16T17:34:06Z">
+        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@2ef9b8bc]" name="navigatebackword" duration-ms="10811" started-at="2018-10-17T11:46:23Z" finished-at="2018-10-17T11:46:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatebackword -->
-        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.NewTest@2ef9b8bc]" name="onlinebanking" duration-ms="5354" started-at="2018-10-16T17:34:06Z" finished-at="2018-10-16T17:34:11Z">
+        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.NewTest@2ef9b8bc]" name="onlinebanking" duration-ms="2545" started-at="2018-10-17T11:46:34Z" finished-at="2018-10-17T11:46:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onlinebanking -->
-        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.NewTest@2ef9b8bc]" name="transferfunds" duration-ms="5341" started-at="2018-10-16T17:34:11Z" finished-at="2018-10-16T17:34:17Z">
+        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.NewTest@2ef9b8bc]" name="transferfunds" duration-ms="2443" started-at="2018-10-17T11:46:36Z" finished-at="2018-10-17T11:46:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferfunds -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@2ef9b8bc]" name="afterTest" is-config="true" duration-ms="1205" started-at="2018-10-16T17:34:17Z" finished-at="2018-10-16T17:34:18Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@2ef9b8bc]" name="afterTest" is-config="true" duration-ms="1248" started-at="2018-10-17T11:46:39Z" finished-at="2018-10-17T11:46:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
