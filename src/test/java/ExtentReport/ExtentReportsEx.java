@@ -1,5 +1,7 @@
 package ExtentReport;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -109,7 +111,7 @@ public class ExtentReportsEx {
 	System.out.println("pagesource" +pagesource);
 	if(pagesource.contentEquals("Zero - Personal Banking - Loans - Credit Cards"))
 	{
-        test = extent.createTest("Login1", "PASSED test case");
+        test = extent.createTest("Login", "PASSED test case");
     	
         Assert.assertTrue(true);
 	}
@@ -173,6 +175,81 @@ public class ExtentReportsEx {
     	//to write or update test information to reporter
     	driver.close();
         extent.flush();
+        File htmlFile = new File("D:\\Demoprojects\\WebdriverTest\\test-output\\testReport1.html");
+        try {
+			Desktop.getDesktop().browse(htmlFile.toURI());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
        
     }
+    @Test    
+    public void executSessionOne() throws InterruptedException, IOException{
+            //First session of WebDriver
+    	System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
+            WebDriver driver = new ChromeDriver();
+            //Goto guru99 site
+            driver.get("http://zero.webappsecurity.com/");
+            //find user name text box and fill it
+            Thread.sleep(10000);
+            driver.findElement(By.xpath("//*[@id='signin_button']")).click();
+    		
+    		driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys("username");;
+    		
+    		driver.findElement(By.xpath("//*[@id='user_password']")).sendKeys("password");
+    		
+    		driver.findElement(By.xpath("//*[@id='login_form']/div[2]/input")).click();
+    		driver.navigate().back();
+    	
+    		Thread.sleep(10000);
+    	String pagesource=	driver.getTitle();
+    	System.out.println("pagesource" +pagesource);
+    	if(pagesource.contentEquals("Zero - Personal Banking - Loans - Credit Cards"))
+    	{
+            test = extent.createTest("Login1", "PASSED test case");
+        	
+            Assert.assertTrue(true);
+    	}
+    	else{
+    		test = extent.createTest("Login", "Failed test case");
+    		String screenShotPath = GetScreenShot.capture(driver, "homepage");
+    		 /// test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
+              
+              test.fail("Snapshot below: " + test.addScreenCaptureFromPath(screenShotPath));
+      		
+           
+    	
+            Assert.assertTrue(false);
+    	}
+            driver.close();
+        }
+        
+    @Test    
+        public void executeSessionTwo() throws InterruptedException{
+            //Second session of WebDriver
+    	System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
+        WebDriver driver = new ChromeDriver();
+            //Goto guru99 site
+        driver.get("http://demo.guru99.com/V4/");
+        //find user name text box and fill it
+        Thread.sleep(10000);
+        driver.findElement(By.name("uid")).sendKeys("Driver 2");
+        test = extent.createTest("executeSessionTwo", "PASSED test case");
+        driver.close();
+        }
+        
+    @Test    
+        public void executSessionThree() throws InterruptedException{
+            //Third session of WebDriver
+    	System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
+        WebDriver driver = new ChromeDriver();
+            //Goto guru99 site
+        driver.get("http://demo.guru99.com/V4/");
+        //find user name text box and fill it
+        Thread.sleep(10000);
+        driver.findElement(By.name("uid")).sendKeys("Driver 3");
+        test = extent.createTest("executSessionThree", "PASSED test case");
+        driver.close();
+        }    
 }

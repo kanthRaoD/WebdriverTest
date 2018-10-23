@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite thread-count="4" name="Failed suite [Suite]" parallel="methods">
   <parameter name="OS" value="Windows"/>
   <parameter name="browser" value="Chrome"/>
-  <test name="Extent Report Test2(failed)">
+  <test name="Extent Report Test2(failed)" parallel="methods">
     <classes>
       <class name="ExtentReport.ExtentReportsEx">
         <methods>
           <include name="startReport"/>
-          <include name="moneymap"/>
           <include name="tearDown"/>
+          <include name="invokebrowser1"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- ExtentReport.ExtentReportsEx -->

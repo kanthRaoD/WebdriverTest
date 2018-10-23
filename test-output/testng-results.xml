@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33663" started-at="2018-10-16T09:57:11Z" finished-at="2018-10-16T09:57:44Z">
+  <suite name="Suite" duration-ms="48159" started-at="2018-10-23T07:16:06Z" finished-at="2018-10-23T07:16:54Z">
     <groups>
     </groups>
-    <test name="Extent Report Test2" duration-ms="33663" started-at="2018-10-16T09:57:11Z" finished-at="2018-10-16T09:57:44Z">
+    <test name="Extent Report Test2" duration-ms="48159" started-at="2018-10-23T07:16:06Z" finished-at="2018-10-23T07:16:54Z">
       <class name="ExtentReport.ExtentReportsEx">
-        <test-method status="PASS" signature="startReport(java.lang.String, java.lang.String)[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="startReport" is-config="true" duration-ms="3504" started-at="2018-10-16T15:27:11Z" finished-at="2018-10-16T15:27:14Z">
+        <test-method status="PASS" signature="startReport(java.lang.String, java.lang.String)[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="startReport" is-config="true" duration-ms="3562" started-at="2018-10-23T12:46:06Z" finished-at="2018-10-23T12:46:09Z">
           <params>
             <param index="0">
               <value>
@@ -23,67 +23,112 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="fundtransfer()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="fundtransfer" duration-ms="12" started-at="2018-10-16T15:27:14Z" finished-at="2018-10-16T15:27:14Z">
+        <test-method status="PASS" signature="executSessionThree()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="executSessionThree" duration-ms="24092" started-at="2018-10-23T12:46:09Z" finished-at="2018-10-23T12:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executSessionThree -->
+        <test-method status="PASS" signature="fundtransfer()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="fundtransfer" duration-ms="17" started-at="2018-10-23T12:46:09Z" finished-at="2018-10-23T12:46:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fundtransfer -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="getResult" is-config="true" duration-ms="19" started-at="2018-10-16T15:27:14Z" finished-at="2018-10-16T15:27:14Z">
+        <test-method status="PASS" signature="executSessionOne()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="executSessionOne" duration-ms="35049" started-at="2018-10-23T12:46:09Z" finished-at="2018-10-23T12:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executSessionOne -->
+        <test-method status="PASS" signature="executeSessionTwo()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="executeSessionTwo" duration-ms="43706" started-at="2018-10-23T12:46:09Z" finished-at="2018-10-23T12:46:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeSessionTwo -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="getResult" is-config="true" duration-ms="15" started-at="2018-10-23T12:46:09Z" finished-at="2018-10-23T12:46:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fundtransfer status=SUCCESS method=ExtentReportsEx.fundtransfer()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af] output={null}]]]>
+                <![CDATA[[TestResult name=fundtransfer status=SUCCESS method=ExtentReportsEx.fundtransfer()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="invokebrowser1()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="invokebrowser1" duration-ms="13049" started-at="2018-10-16T15:27:14Z" finished-at="2018-10-16T15:27:27Z">
+        <test-method status="PASS" signature="invokebrowser1()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="invokebrowser1" duration-ms="13317" started-at="2018-10-23T12:46:09Z" finished-at="2018-10-23T12:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokebrowser1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="getResult" is-config="true" duration-ms="0" started-at="2018-10-16T15:27:27Z" finished-at="2018-10-16T15:27:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invokebrowser1 status=SUCCESS method=ExtentReportsEx.invokebrowser1()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="login1()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="login1" duration-ms="16566" started-at="2018-10-16T15:27:27Z" finished-at="2018-10-16T15:27:44Z">
+        <test-method status="PASS" signature="login1()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="login1" duration-ms="14465" started-at="2018-10-23T12:46:23Z" finished-at="2018-10-23T12:46:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login1 -->
-        <test-method status="PASS" signature="paybills()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="paybills" duration-ms="1" started-at="2018-10-16T15:27:44Z" finished-at="2018-10-16T15:27:44Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="getResult" is-config="true" duration-ms="0" started-at="2018-10-23T12:46:23Z" finished-at="2018-10-23T12:46:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invokebrowser1 status=SUCCESS method=ExtentReportsEx.invokebrowser1()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="getResult" is-config="true" duration-ms="2" started-at="2018-10-23T12:46:33Z" finished-at="2018-10-23T12:46:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=executSessionThree status=SUCCESS method=ExtentReportsEx.executSessionThree()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="paybills()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="paybills" duration-ms="2" started-at="2018-10-23T12:46:33Z" finished-at="2018-10-23T12:46:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- paybills -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="getResult" is-config="true" duration-ms="0" started-at="2018-10-16T15:27:44Z" finished-at="2018-10-16T15:27:44Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="getResult" is-config="true" duration-ms="1" started-at="2018-10-23T12:46:33Z" finished-at="2018-10-23T12:46:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login1 status=SUCCESS method=ExtentReportsEx.login1()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af] output={null}]]]>
+                <![CDATA[[TestResult name=paybills status=SUCCESS method=ExtentReportsEx.paybills()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="getResult" is-config="true" duration-ms="0" started-at="2018-10-16T15:27:44Z" finished-at="2018-10-16T15:27:44Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="getResult" is-config="true" duration-ms="2" started-at="2018-10-23T12:46:37Z" finished-at="2018-10-23T12:46:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=paybills status=SUCCESS method=ExtentReportsEx.paybills()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af] output={null}]]]>
+                <![CDATA[[TestResult name=login1 status=SUCCESS method=ExtentReportsEx.login1()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ExtentReport.ExtentReportsEx@4501b7af]" name="tearDown" is-config="true" duration-ms="486" started-at="2018-10-16T15:27:44Z" finished-at="2018-10-16T15:27:44Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="getResult" is-config="true" duration-ms="1" started-at="2018-10-23T12:46:44Z" finished-at="2018-10-23T12:46:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=executSessionOne status=SUCCESS method=ExtentReportsEx.executSessionOne()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="getResult" is-config="true" duration-ms="1" started-at="2018-10-23T12:46:53Z" finished-at="2018-10-23T12:46:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=executeSessionTwo status=SUCCESS method=ExtentReportsEx.executeSessionTwo()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ExtentReport.ExtentReportsEx@523884b2]" name="tearDown" is-config="true" duration-ms="861" started-at="2018-10-23T12:46:53Z" finished-at="2018-10-23T12:46:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
