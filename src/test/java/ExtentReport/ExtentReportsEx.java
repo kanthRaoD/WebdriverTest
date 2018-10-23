@@ -111,6 +111,7 @@ public class ExtentReportsEx {
 	System.out.println("pagesource" +pagesource);
 	if(pagesource.contentEquals("Zero - Personal Banking - Loans - Credit Cards"))
 	{
+		System.out.println("pagesource" +pagesource);
         test = extent.createTest("Login", "PASSED test case");
     	
         Assert.assertTrue(true);
@@ -204,8 +205,8 @@ public class ExtentReportsEx {
     	
     		Thread.sleep(10000);
     	String pagesource=	driver.getTitle();
-    	System.out.println("pagesource" +pagesource);
-    	System.out.println("pagesource" +pagesource);
+    
+    	
     	if(pagesource.contentEquals("Zero - Personal Banking - Loans - Credit Cards"))
     	{
             test = extent.createTest("Login1", "PASSED test case");
