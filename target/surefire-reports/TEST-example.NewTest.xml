@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="example.NewTest" time="35.229" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="example.NewTest" time="48.767" errors="0" skipped="0">
   <properties>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -33,33 +33,33 @@
     <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 78 Stepping 3, GenuineIntel"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="LOCALAPPDATA" value="C:\Users\M1047765\AppData\Local"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/jenkins/job/Testngproject/6/display/redirect?page=changes"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/jenkins/job/Testngproject/8/display/redirect?page=changes"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="user.script" value=""/>
     <property name="path.separator" value=";"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="BUILD_TAG" value="jenkins-Testngproject-6"/>
+    <property name="BUILD_TAG" value="jenkins-Testngproject-8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Apache-maven\apache-maven-3.5.2 D:\apachetomcat\apache-tomcat-8.5.8\webapps\jenkins\WEB-INF\lib\remoting-3.23.jar C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 64732"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Apache-maven\apache-maven-3.5.2 D:\apachetomcat\apache-tomcat-8.5.8\webapps\jenkins\WEB-INF\lib\remoting-3.23.jar C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 56784"/>
     <property name="HUDSON_URL" value="http://localhost:8080/jenkins/"/>
     <property name="JENKINS_SERVER_COOKIE" value="3111a127844bc921"/>
     <property name="=D:" value="D:\apachetomcat\apache-tomcat-8.5.8\bin"/>
-    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
     <property name="Path" value="C:\Program Files\Java\jdk1.8.0_152/bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Apache-maven\apache-maven-3.5.2;%ANT_HOME%\bin;C:\Users\M1047765\AppData\Local\Microsoft\WindowsApps;C:\Users\M1047765\AppData\Roaming\npm"/>
-    <property name="GIT_COMMIT" value="5753a00e96d24c1c92c84c9f9bdb80df223c96ee"/>
+    <property name="GIT_COMMIT" value="963da87b1c76b2eab53baed567189a387c0cf99a"/>
     <property name="java.io.tmpdir" value="C:\Users\M1047765\AppData\Local\Temp\"/>
     <property name="APPDATA" value="C:\Users\M1047765\AppData\Roaming"/>
     <property name="user.language" value="en"/>
     <property name="CATALINA_TMPDIR" value="D:\apachetomcat\apache-tomcat-8.5.8\temp"/>
     <property name="line.separator" value="
 "/>
-    <property name="BUILD_URL" value="http://localhost:8080/jenkins/job/Testngproject/6/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/jenkins/job/Testngproject/8/"/>
     <property name="ACTION" value="start"/>
     <property name="M2_HOME" value="C:\Apache-maven\apache-maven-3.5.2"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="sun.desktop" value="windows"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="BUILD_DISPLAY_NAME" value="#6"/>
+    <property name="BUILD_DISPLAY_NAME" value="#8"/>
     <property name="OS" value="Windows_NT"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="CATALINA_BASE" value="D:\apachetomcat\apache-tomcat-8.5.8"/>
@@ -79,7 +79,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="6"/>
+    <property name="BUILD_NUMBER" value="8"/>
     <property name="maven3.interceptor" value="C:\Users\M1047765\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_152\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Apache-maven\apache-maven-3.5.2/bin;C:\Program Files\Java\jdk1.8.0_152/bin;C:\Program Files\Java\jdk1.8.0_152/bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Apache-maven\apache-maven-3.5.2;%ANT_HOME%\bin;C:\Users\M1047765\AppData\Local\Microsoft\WindowsApps;C:\Users\M1047765\AppData\Roaming\npm;."/>
     <property name="HOMEDRIVE" value="C:"/>
@@ -90,14 +90,14 @@
     <property name="LOGGING_MANAGER" value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
     <property name="_RUNJDB" value="&quot;C:\Program Files\Java\jdk1.8.0_152\bin\jdb.exe&quot;"/>
     <property name="JOB_URL" value="http://localhost:8080/jenkins/job/Testngproject/"/>
-    <property name="GIT_PREVIOUS_COMMIT" value="5753a00e96d24c1c92c84c9f9bdb80df223c96ee"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="963da87b1c76b2eab53baed567189a387c0cf99a"/>
     <property name="ANT_HOME" value="D:\apache-ant-1.10.5"/>
     <property name="OneDrive" value="C:\Users\Administrator\OneDrive"/>
     <property name="GIT_BRANCH" value="origin/master"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/jenkins/job/Testngproject/6/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/jenkins/job/Testngproject/8/display/redirect"/>
     <property name="MAINCLASS" value="org.apache.catalina.startup.Bootstrap"/>
     <property name="JENKINS_HOME" value="C:\Users\M1047765\.jenkins"/>
-    <property name="BUILD_ID" value="6"/>
+    <property name="BUILD_ID" value="8"/>
     <property name="TEMP" value="C:\Users\M1047765\AppData\Local\Temp"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\bin"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -106,7 +106,7 @@
     <property name="PROCESSOR_REVISION" value="4e03"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="HUDSON_HOME" value="C:\Users\M1047765\.jenkins"/>
-    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="5753a00e96d24c1c92c84c9f9bdb80df223c96ee"/>
+    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="963da87b1c76b2eab53baed567189a387c0cf99a"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
     <property name="PATH+MAVEN" value="C:\Apache-maven\apache-maven-3.5.2/bin"/>
     <property name="USERDOMAIN_ROAMINGPROFILE" value="MINDTREE"/>
@@ -161,9 +161,9 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="GIT_URL" value="https://github.com/kanthRaoD/WebdriverTest.git"/>
   </properties>
-  <testcase classname="example.NewTest" name="invokebrowser" time="15.886"/>
-  <testcase classname="example.NewTest" name="login" time="3.297"/>
-  <testcase classname="example.NewTest" name="navigatebackword" time="10.706"/>
-  <testcase classname="example.NewTest" name="onlinebanking" time="2.599"/>
-  <testcase classname="example.NewTest" name="transferfunds" time="2.741"/>
+  <testcase classname="example.NewTest" name="invokebrowser" time="19.833"/>
+  <testcase classname="example.NewTest" name="login" time="6.563"/>
+  <testcase classname="example.NewTest" name="navigatebackword" time="10.747"/>
+  <testcase classname="example.NewTest" name="onlinebanking" time="2.5"/>
+  <testcase classname="example.NewTest" name="transferfunds" time="9.124"/>
 </testsuite>
