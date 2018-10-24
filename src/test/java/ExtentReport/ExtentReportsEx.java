@@ -139,6 +139,7 @@ public class ExtentReportsEx {
   @Test
     public void paybills() {
         test = extent.createTest("PayBills1", "PASSED test case");
+        System.out.println("test" +test);
         Assert.assertTrue(true);
     }
      
