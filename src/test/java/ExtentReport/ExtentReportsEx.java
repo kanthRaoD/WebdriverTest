@@ -72,7 +72,7 @@ public class ExtentReportsEx {
     	
 		Thread.sleep(10000);
 		String title = driver.getTitle();	
-		System.out.println("title" +title);
+	
 	//	Assert.assertTrue(title.contains("Zero - Personal Banking"));
 	//	logger.log(LogStatus.PASS, "title is verified");
 		System.out.println("title" +title);
