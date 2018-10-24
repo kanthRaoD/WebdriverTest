@@ -72,7 +72,7 @@ public class ExtentReportsEx {
     	
 		Thread.sleep(10000);
 		String title = driver.getTitle();	
-		
+		System.out.println("title" +title);
 	//	Assert.assertTrue(title.contains("Zero - Personal Banking"));
 	//	logger.log(LogStatus.PASS, "title is verified");
 		System.out.println("title" +title);
@@ -132,6 +132,7 @@ public class ExtentReportsEx {
     @Test
     public void fundtransfer() {
         test = extent.createTest("Fund_Transfer1", "PASSED test case");
+        System.out.println("test" +test);
         Assert.assertTrue(true);
     }
      
