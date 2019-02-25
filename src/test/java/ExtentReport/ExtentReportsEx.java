@@ -4,6 +4,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,6 +32,7 @@ import example.NewTest;
  
 public class ExtentReportsEx {
     private WebDriver driver;	
+    final static Logger logger = Logger.getLogger(ExtentReportsEx.class);
 	//builds a new report using the html template 
     ExtentHtmlReporter htmlReporter;
     
@@ -51,7 +53,8 @@ public class ExtentReportsEx {
         //To add system or environment info by using the setSystemInfo method.
         extent.setSystemInfo("OS", OS);
         extent.setSystemInfo("Browser", browser);
-        
+        logger.info("OS:"+OS);
+        logger.info("Browser" + browser);
         //configuration items to change the look and feel
         //add content, manage tests etc
         htmlReporter.config().setChartVisibilityOnOpen(true);
@@ -73,6 +76,7 @@ public class ExtentReportsEx {
 		Thread.sleep(10000);
 		String title = driver.getTitle();	
 		System.out.println("title" +title);
+		logger.info("titel"+title);
 	//	Assert.assertTrue(title.contains("Zero - Personal Banking"));
 	//	logger.log(LogStatus.PASS, "title is verified");
 		System.out.println("title" +title);
@@ -109,9 +113,10 @@ public class ExtentReportsEx {
 		Thread.sleep(10000);
 	String pagesource=	driver.getTitle();
 	System.out.println("pagesource" +pagesource);
+	logger.info("pagesource" +pagesource);
 	if(pagesource.contentEquals("Zero - Personal Banking - Loans - Credit Cards"))
 	{
-		System.out.println("pagesource" +pagesource);
+		
         test = extent.createTest("Login", "PASSED test case");
     	
         Assert.assertTrue(true);
@@ -196,7 +201,8 @@ public class ExtentReportsEx {
             driver.get("http://zero.webappsecurity.com/");
             //find user name text box and fill it
             Thread.sleep(10000);
-            driver.findElement(By.xpath("//*[@id='signin_button']")).click();
+            String button="signin_button";
+            driver.findElement(By.xpath("//*[@id='"+button+"']")).click();
     		
     		driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys("username");;
     		

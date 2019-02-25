@@ -1,6 +1,8 @@
 example\NewTest.class
+example\UplodeFile.class
 example\transferfunds.class
 com\extentreport\BasicExtentReport.class
 ExtentReport\ExtentReportsEx.class
 GenericLibrary\GetScreenShot.class
 example\Paybills.class
+LoggingDemo.class

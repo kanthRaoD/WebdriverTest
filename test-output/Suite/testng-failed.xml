@@ -9,8 +9,8 @@
         <methods>
           <include name="startReport"/>
           <include name="tearDown"/>
-          <include name="invokebrowser1"/>
           <include name="getResult"/>
+          <include name="executSessionOne"/>
         </methods>
       </class> <!-- ExtentReport.ExtentReportsEx -->
     </classes>

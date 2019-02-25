@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;		
 import org.testng.annotations.Test;
@@ -17,11 +18,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;		
 public class transferfunds {		
 	    private WebDriver driver;		
-		
+	    ExtentReports logger= ExtentReports.get(transferfunds.class);
 	    @Test
 	     public void invokebrowser() {	
 	    	
-	    	ExtentReports logger= ExtentReports.get(transferfunds.class);
+	    	
 	    	logger.init("D:\\Extentreports\\advancedreport.html", true);
 	    	logger.startTest("Verify Page Title");
 			driver.get("http://zero.webappsecurity.com/");  
@@ -110,11 +111,11 @@ public class transferfunds {
 			
 			if(	element.getText().equalsIgnoreCase("You successfully submitted your transaction."))
 			{
-		//		logger4.log(LogStatus.INFO, "Pass");
+				logger.log(LogStatus.INFO, "Pass");
 				System.out.println("pass");
 			}else
 			{
-		//		logger4.log(LogStatus.INFO, "Fail");
+				logger.log(LogStatus.INFO, "Fail");
 				System.out.println("fail");
 
 			}
@@ -122,15 +123,17 @@ public class transferfunds {
 		
 		@BeforeTest
 		public void beforeTest() {	
+			/* System.setProperty("webdriver.ie.driver","C:\\IEdriver\\IEDriverServer.exe");  
+			    driver = new InternetExplorerDriver();*/
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
 		    driver = new ChromeDriver();
-		   // driver.manage().window().maximize();
-		   // logger.log(LogStatus.INFO, "Browser is up on running");
+		    driver.manage().window().maximize();
+		    logger.log(LogStatus.INFO, "Browser is up on running");
 		}		
 		@AfterTest
 		public void afterTest() {
 			ExtentReports logger5= ExtentReports.get(NewTest.class); 
 			driver.quit();	
-			logger5.endTest();
+			logger.endTest();
 		}		
 }	
