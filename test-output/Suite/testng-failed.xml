@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" name="Failed suite [Suite]" parallel="methods">
-  <parameter name="OS" value="Windows"/>
-  <parameter name="browser" value="Chrome"/>
-  <test name="Extent Report Test2(failed)" parallel="methods">
+<suite thread-count="3" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test1(failed)" parallel="classes">
     <classes>
-      <class name="ExtentReport.ExtentReportsEx">
+      <class name="example.transferfunds">
         <methods>
-          <include name="startReport"/>
-          <include name="tearDown"/>
-          <include name="getResult"/>
-          <include name="executSessionOne"/>
+          <include name="login"/>
+          <include name="navigatebackword"/>
+          <include name="invokebrowser"/>
+          <include name="transferfunds"/>
+          <include name="beforeTest"/>
+          <include name="onlinebanking"/>
         </methods>
-      </class> <!-- ExtentReport.ExtentReportsEx -->
+      </class> <!-- example.transferfunds -->
+      <class name="example.NewTest">
+        <methods>
+          <include name="transferfunds"/>
+          <include name="navigatebackword"/>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="onlinebanking"/>
+          <include name="invokebrowser"/>
+        </methods>
+      </class> <!-- example.NewTest -->
+      <class name="example.Paybills">
+        <methods>
+          <include name="paybills1"/>
+          <include name="paybills"/>
+          <include name="onlinebanking"/>
+          <include name="navigatebackword"/>
+          <include name="beforeTest"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- example.Paybills -->
     </classes>
-  </test> <!-- Extent Report Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

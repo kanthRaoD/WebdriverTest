@@ -18,11 +18,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;		
 public class transferfunds {		
 	    private WebDriver driver;		
-	    ExtentReports logger= ExtentReports.get(transferfunds.class);
+		
 	    @Test
 	     public void invokebrowser() {	
 	    	
-	    	
+	    	ExtentReports logger= ExtentReports.get(transferfunds.class);
 	    	logger.init("D:\\Extentreports\\advancedreport.html", true);
 	    	logger.startTest("Verify Page Title");
 			driver.get("http://zero.webappsecurity.com/");  
@@ -111,11 +111,11 @@ public class transferfunds {
 			
 			if(	element.getText().equalsIgnoreCase("You successfully submitted your transaction."))
 			{
-				logger.log(LogStatus.INFO, "Pass");
+		//		logger4.log(LogStatus.INFO, "Pass");
 				System.out.println("pass");
 			}else
 			{
-				logger.log(LogStatus.INFO, "Fail");
+		//		logger4.log(LogStatus.INFO, "Fail");
 				System.out.println("fail");
 
 			}
@@ -128,12 +128,12 @@ public class transferfunds {
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
 		    driver = new ChromeDriver();
 		    driver.manage().window().maximize();
-		    logger.log(LogStatus.INFO, "Browser is up on running");
+		   // logger.log(LogStatus.INFO, "Browser is up on running");
 		}		
 		@AfterTest
 		public void afterTest() {
-			ExtentReports logger5= ExtentReports.get(NewTest.class); 
+			ExtentReports logger5= ExtentReports.get(transferfunds.class); 
 			driver.quit();	
-			logger.endTest();
+			logger5.endTest();
 		}		
 }	

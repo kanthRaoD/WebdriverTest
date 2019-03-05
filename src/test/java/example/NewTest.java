@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;		
 import org.testng.annotations.Test;
@@ -23,16 +24,16 @@ public class NewTest {
 	    	
 	    	ExtentReports logger= ExtentReports.get(NewTest.class);
 	    	logger.init("D:\\Extentreports\\advancedreport.html", true);
-	    	logger.startTest("Verify Page Title");
+	    	//logger.startTest("Verify Page Title");
 			driver.get("http://zero.webappsecurity.com/");  
-			logger.log(LogStatus.INFO, "Application is up on running");
+			//logger.log(LogStatus.INFO, "Application is up on running");
 			
 			String title = driver.getTitle();	
-			logger.log(LogStatus.INFO, "title captured");
+			//logger.log(LogStatus.INFO, "title captured");
 			//Assert.assertTrue(title.contains("Zero - Personal Banking"));
 			//logger.log(LogStatus.PASS, "title is verified");
 			System.out.println(title);
-			logger.attachScreenshot("C:\\Users\\M1047765\\Pictures\\xpath-selenium.png");
+			//logger.attachScreenshot("C:\\Users\\M1047765\\Pictures\\xpath-selenium.png");
 			try {
 				Thread.sleep(10000);
 				
@@ -53,13 +54,13 @@ public class NewTest {
 		{
 			ExtentReports logger1= ExtentReports.get(NewTest.class); 
 			driver.findElement(By.xpath("//*[@id='signin_button']")).click();
-			logger1.log(LogStatus.INFO, "click on signin button");
+			//logger1.log(LogStatus.INFO, "click on signin button");
 			driver.findElement(By.xpath("//*[@id='user_login']")).sendKeys("username");;
-			logger1.log(LogStatus.INFO, "Enter username");
+			//logger1.log(LogStatus.INFO, "Enter username");
 			driver.findElement(By.xpath("//*[@id='user_password']")).sendKeys("password");
-			logger1.log(LogStatus.INFO, "Enter password");
+			//logger1.log(LogStatus.INFO, "Enter password");
 			driver.findElement(By.xpath("//*[@id='login_form']/div[2]/input")).click();
-		logger1.log(LogStatus.INFO, "click on login button");
+		    //logger1.log(LogStatus.INFO, "click on login button");
 		}
 		
 		@Test(priority=3)
@@ -122,8 +123,22 @@ public class NewTest {
 		
 		@BeforeTest
 		public void beforeTest() {	
+			String browser=System.getProperty("browser");
+			String path=System.getProperty("env");
+			if(browser.equalsIgnoreCase("Chrome"))
+			{
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
 		    driver = new ChromeDriver();
+			}
+			else if(browser.equalsIgnoreCase("IE"))	
+			{
+				System.setProperty("webdriver.IE.driver","C:\\IEdriver\\IEdriverServer.exe");  
+			    driver = new InternetExplorerDriver();
+			}
+			else
+			{
+				driver = new FirefoxDriver();
+			}
 		   // driver.manage().window().maximize();
 		   // logger.log(LogStatus.INFO, "Browser is up on running");
 		}		
@@ -131,6 +146,6 @@ public class NewTest {
 		public void afterTest() {
 			ExtentReports logger5= ExtentReports.get(NewTest.class); 
 			driver.quit();	
-			logger5.endTest();
+			//logger5.endTest();
 		}		
 }	

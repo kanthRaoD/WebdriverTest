@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84505" started-at="2019-02-15T07:13:09Z" finished-at="2019-02-15T07:14:33Z">
+  <suite name="Default suite" duration-ms="46083" started-at="2019-03-05T07:14:50Z" finished-at="2019-03-05T07:15:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84505" started-at="2019-02-15T07:13:09Z" finished-at="2019-02-15T07:14:33Z">
-      <class name="example.UplodeFile">
-        <test-method status="PASS" signature="UploadFileUsingSendKeys()[pri:0, instance:example.UplodeFile@10e92f8f]" name="UploadFileUsingSendKeys" duration-ms="84477" started-at="2019-02-15T12:43:09Z" finished-at="2019-02-15T12:44:33Z">
+    <test name="Default test" duration-ms="46083" started-at="2019-03-05T07:14:50Z" finished-at="2019-03-05T07:15:36Z">
+      <class name="example.NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@14acaea5]" name="beforeTest" is-config="true" duration-ms="3066" started-at="2019-03-05T12:44:50Z" finished-at="2019-03-05T12:44:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UploadFileUsingSendKeys -->
-      </class> <!-- example.UplodeFile -->
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:example.NewTest@14acaea5]" name="invokebrowser" duration-ms="16188" started-at="2019-03-05T12:44:53Z" finished-at="2019-03-05T12:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokebrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:example.NewTest@14acaea5]" name="login" duration-ms="5119" started-at="2019-03-05T12:45:09Z" finished-at="2019-03-05T12:45:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="navigatebackword()[pri:0, instance:example.NewTest@14acaea5]" name="navigatebackword" duration-ms="11064" started-at="2019-03-05T12:45:15Z" finished-at="2019-03-05T12:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatebackword -->
+        <test-method status="PASS" signature="onlinebanking()[pri:0, instance:example.NewTest@14acaea5]" name="onlinebanking" duration-ms="5679" started-at="2019-03-05T12:45:26Z" finished-at="2019-03-05T12:45:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onlinebanking -->
+        <test-method status="PASS" signature="transferfunds()[pri:0, instance:example.NewTest@14acaea5]" name="transferfunds" duration-ms="3099" started-at="2019-03-05T12:45:31Z" finished-at="2019-03-05T12:45:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferfunds -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@14acaea5]" name="afterTest" is-config="true" duration-ms="1850" started-at="2019-03-05T12:45:34Z" finished-at="2019-03-05T12:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- example.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

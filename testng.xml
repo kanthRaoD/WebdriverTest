@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="4" parallel="methods">
-  <!-- <test thread-count="5" name="Test">    
+<suite thread-count="2" verbose="1" name="Bank Suite" annotations="JDK" parallel="tests">
+   <test  name="Test1">    
     <classes>
       <class name="example.NewTest"/>
     </classes>
-  </test> Test
+  </test>
   
-    <test thread-count="5" name="Test1">
+      <test  name="Test2">
     <classes>
       <class name="example.transferfunds"/>
-       <class name="example.NewTest"/>
+      
     </classes>
-    
-    
-    
-  </test>   
-  
-    <test thread-count="5" name="Test2">
+     </test>  
+      
+   <!--
+    <test  name="Test3">
     <classes>
       <class name="example.Paybills"/>
       
@@ -37,18 +35,18 @@
     
   </test>  -->
   
-  <parameter name="OS" value="Windows"/>
+  <!-- <parameter name="OS" value="Windows"/>
 <parameter name="browser" value="Chrome"/>
 
-  <!-- <test name="Extent Report Test1">
+  <test name="Extent Report Test1">
    <classes>
      <class name="com.extentreport.BasicExtentReport"/>
     </classes>
-  </test>  -->
+  </test> 
   <test name="Extent Report Test2">
    <classes>
      <class name="ExtentReport.ExtentReportsEx"/>
     </classes>
-  </test> 
+  </test>  -->
   
 </suite> 
