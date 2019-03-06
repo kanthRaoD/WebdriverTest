@@ -20,9 +20,9 @@ public class NewTest {
 	    public static WebDriver driver;		
 	    @BeforeTest
 		public void beforeTest() {	
-			String browser=System.getProperty("Browser");
+			//String browser=System.getProperty("Browser");
 			//String path=System.getProperty("env");
-			//String browser="Chrome";
+			String browser="Chrome";
 			if(browser.equalsIgnoreCase("Chrome"))
 			{
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
