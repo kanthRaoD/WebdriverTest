@@ -7,12 +7,12 @@
     </classes>
   </test>
   
-      <test  name="Test2">
+     <!--  <test  name="Test2">
     <classes>
       <class name="example.transferfunds"/>
       
     </classes>
-     </test>  
+     </test>  --> 
       
    <!--
     <test  name="Test3">
