@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: example.NewTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 1.044 sec <<< FAILURE!
-beforeTest(example.NewTest)  Time elapsed: 0.817 sec  <<< FAILURE!
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 1.015 sec <<< FAILURE!
+beforeTest(example.NewTest)  Time elapsed: 0.797 sec  <<< FAILURE!
 java.lang.NullPointerException
 	at example.NewTest.beforeTest(NewTest.java:129)
 

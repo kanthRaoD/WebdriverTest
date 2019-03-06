@@ -131,15 +131,14 @@ public class NewTest {
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
 		    driver = new ChromeDriver();
 			}
-			else if(browser.equalsIgnoreCase("firefox"))	
-			{
-				driver = new FirefoxDriver();	
-			}
-			else
+			else if(browser.equalsIgnoreCase("IE"))	
 			{
 				System.setProperty("webdriver.IE.driver","C:\\IEdriver\\IEdriverServer.exe");  
 			    driver = new InternetExplorerDriver();
-				
+			}
+			else
+			{
+				driver = new FirefoxDriver();
 			}
 		   // driver.manage().window().maximize();
 		   // logger.log(LogStatus.INFO, "Browser is up on running");
