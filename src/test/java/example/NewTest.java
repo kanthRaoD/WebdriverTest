@@ -129,7 +129,7 @@ public class NewTest {
 			if(browser.equalsIgnoreCase("Chrome"))
 			{
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
-		    driver = new ChromeDriver();
+		     driver = new ChromeDriver();
 			}
 			else if(browser.equalsIgnoreCase("IE"))	
 			{

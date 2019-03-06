@@ -5,8 +5,12 @@
     <classes>
       <class name="example.NewTest">
         <methods>
+          <include name="transferfunds"/>
+          <include name="navigatebackword"/>
           <include name="afterTest"/>
+          <include name="login"/>
           <include name="beforeTest"/>
+          <include name="onlinebanking"/>
           <include name="invokebrowser"/>
         </methods>
       </class> <!-- example.NewTest -->
