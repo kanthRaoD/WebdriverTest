@@ -123,22 +123,23 @@ public class NewTest {
 		
 		@BeforeTest
 		public void beforeTest() {	
-			//String browser=System.getProperty("browser");
+			String browser=System.getProperty("browser");
 			//String path=System.getProperty("env");
-			String browser="Chrome";
+			//String browser="Chrome";
 			if(browser.equalsIgnoreCase("Chrome"))
 			{
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
 		    driver = new ChromeDriver();
 			}
-			else if(browser.equalsIgnoreCase("IE"))	
+			else if(browser.equalsIgnoreCase("firefox"))	
 			{
-				System.setProperty("webdriver.IE.driver","C:\\IEdriver\\IEdriverServer.exe");  
-			    driver = new InternetExplorerDriver();
+				driver = new FirefoxDriver();	
 			}
 			else
 			{
-				driver = new FirefoxDriver();
+				System.setProperty("webdriver.IE.driver","C:\\IEdriver\\IEdriverServer.exe");  
+			    driver = new InternetExplorerDriver();
+				
 			}
 		   // driver.manage().window().maximize();
 		   // logger.log(LogStatus.INFO, "Browser is up on running");
