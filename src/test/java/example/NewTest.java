@@ -17,8 +17,29 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;		
 public class NewTest {		
-	    private WebDriver driver;		
-		
+	    public static WebDriver driver;		
+	    @BeforeTest
+		public void beforeTest() {	
+			String browser=System.getProperty("Browser");
+			//String path=System.getProperty("env");
+			//String browser="Chrome";
+			if(browser.equalsIgnoreCase("Chrome"))
+			{
+			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
+		     driver = new ChromeDriver();
+			}
+			else if(browser.equalsIgnoreCase("IE"))	
+			{
+				System.setProperty("webdriver.IE.driver","C:\\IEdriver\\IEdriverServer.exe");  
+			    driver = new InternetExplorerDriver();
+			}
+			else
+			{
+				driver = new FirefoxDriver();
+			}
+		   // driver.manage().window().maximize();
+		   // logger.log(LogStatus.INFO, "Browser is up on running");
+		}		
 	    @Test
 	     public void invokebrowser() {	
 	    	
@@ -121,28 +142,7 @@ public class NewTest {
 			}
 		}
 		
-		@BeforeTest
-		public void beforeTest() {	
-			String browser=System.getProperty("browser");
-			//String path=System.getProperty("env");
-			//String browser="Chrome";
-			if(browser.equalsIgnoreCase("Chrome"))
-			{
-			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
-		     driver = new ChromeDriver();
-			}
-			else if(browser.equalsIgnoreCase("IE"))	
-			{
-				System.setProperty("webdriver.IE.driver","C:\\IEdriver\\IEdriverServer.exe");  
-			    driver = new InternetExplorerDriver();
-			}
-			else
-			{
-				driver = new FirefoxDriver();
-			}
-		   // driver.manage().window().maximize();
-		   // logger.log(LogStatus.INFO, "Browser is up on running");
-		}		
+		
 		@AfterTest
 		public void afterTest() {
 			ExtentReports logger5= ExtentReports.get(NewTest.class); 
