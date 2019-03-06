@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" name="Failed suite [Bank Suite]" parallel="tests">
-  <test name="Test2(failed)" parallel="tests">
-    <classes>
-      <class name="example.transferfunds">
-        <methods>
-          <include name="login"/>
-          <include name="navigatebackword"/>
-          <include name="invokebrowser"/>
-          <include name="transferfunds"/>
-          <include name="beforeTest"/>
-          <include name="onlinebanking"/>
-        </methods>
-      </class> <!-- example.transferfunds -->
-      <class name="example.NewTest">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- example.NewTest -->
-    </classes>
-  </test> <!-- Test2(failed) -->
   <test name="Test1(failed)" parallel="tests">
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="afterTest"/>
+          <include name="transferfunds"/>
+          <include name="navigatebackword"/>
+          <include name="login"/>
           <include name="beforeTest"/>
+          <include name="onlinebanking"/>
           <include name="invokebrowser"/>
         </methods>
       </class> <!-- example.NewTest -->
       <class name="example.transferfunds">
         <methods>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- example.transferfunds -->
