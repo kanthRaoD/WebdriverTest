@@ -123,11 +123,19 @@ public class transferfunds {
 		
 		@BeforeTest
 		public void beforeTest() {	
+			String browser=System.getProperty("browser");
+			String environment=System.getProperty("env");
 			/* System.setProperty("webdriver.ie.driver","C:\\IEdriver\\IEDriverServer.exe");  
 			    driver = new InternetExplorerDriver();*/
+			if(browser.equalsIgnoreCase("Chrome"))
+			{
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
 		    driver = new ChromeDriver();
 		    driver.manage().window().maximize();
+			}
+			else{
+				driver = new FirefoxDriver();
+			}
 		   // logger.log(LogStatus.INFO, "Browser is up on running");
 		}		
 		@AfterTest

@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="example.NewTest">
+      <class name="example.transferfunds">
         <methods>
-          <include name="transferfunds"/>
-          <include name="navigatebackword"/>
-          <include name="afterTest"/>
           <include name="login"/>
+          <include name="navigatebackword"/>
+          <include name="invokebrowser"/>
+          <include name="transferfunds"/>
           <include name="beforeTest"/>
           <include name="onlinebanking"/>
-          <include name="invokebrowser"/>
         </methods>
-      </class> <!-- example.NewTest -->
+      </class> <!-- example.transferfunds -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
