@@ -14,7 +14,7 @@
     </classes>
      </test>  
       
-   <!--
+   
     <test  name="Test3">
     <classes>
       <class name="example.Paybills"/>
@@ -23,7 +23,7 @@
     
     
     
-  </test>  -->  
+  </test>  
   
    <!--   <test name="Test3">
     <classes>
