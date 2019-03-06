@@ -124,7 +124,7 @@ public class NewTest {
 		@BeforeTest
 		public void beforeTest() {	
 			String browser=System.getProperty("browser");
-			//String path=System.getProperty("env");
+			String path=System.getProperty("env");
 			//String browser="Chrome";
 			if(browser.equalsIgnoreCase("Chrome"))
 			{
