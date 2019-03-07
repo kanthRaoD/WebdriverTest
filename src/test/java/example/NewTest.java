@@ -21,7 +21,7 @@ public class NewTest {
 	    @BeforeTest
 		public void beforeTest() {	
 			String browser=System.getProperty("Browser");
-			String path=System.getProperty("env");
+			String path=System.getProperty("Env");
 			//String browser="Chrome";
 			if(browser.equalsIgnoreCase("Chrome"))
 			{

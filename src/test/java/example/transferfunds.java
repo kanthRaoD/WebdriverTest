@@ -123,8 +123,8 @@ public class transferfunds {
 		
 		@BeforeTest
 		public void beforeTest() {	
-			String browser=System.getProperty("browser");
-			String environment=System.getProperty("env");
+			String browser=System.getProperty("Browser");
+			String environment=System.getProperty("Env");
 			/* System.setProperty("webdriver.ie.driver","C:\\IEdriver\\IEDriverServer.exe");  
 			    driver = new InternetExplorerDriver();*/
 			if(browser.equalsIgnoreCase("Chrome"))
