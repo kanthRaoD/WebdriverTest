@@ -21,18 +21,18 @@ public class NewTest {
 	    @BeforeTest
 		public void beforeTest() {	
 			String browser=System.getProperty("Browser");
-			//String path=System.getProperty("env");
+			String path=System.getProperty("env");
 			//String browser="Chrome";
 			if(browser.equalsIgnoreCase("Chrome"))
 			{
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");  
 		     driver = new ChromeDriver();
 			}
-			else if(browser.equalsIgnoreCase("IE"))	
+			/*else if(browser.equalsIgnoreCase("IE"))	
 			{
 				System.setProperty("webdriver.IE.driver","C:\\IEdriver\\IEdriverServer.exe");  
 			    driver = new InternetExplorerDriver();
-			}
+			}*/
 			else
 			{
 				driver = new FirefoxDriver();
